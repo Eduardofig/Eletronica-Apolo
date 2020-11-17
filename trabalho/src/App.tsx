@@ -5,17 +5,30 @@ import Produto from './Produto';
 import Navbar from './Navbar';
 import data from './AppData';
 
-const App:React.FunctionComponent = () => {
-    return (
+interface produtoProps {
+    precoProduto:string;
+    nomeProduto:string;
+    descricaoProduto:string;
+    imagemProduto:string;
+}
+
+const produtoMap = (data:Array<produtoProps>) => {
+    let map = data.map(dados => (<Produto
+            precoProduto = {dados.precoProduto}
+            nomeProduto = {dados.nomeProduto}
+            descricaoProduto = {dados.descricaoProduto}
+            imagemProduto = {dados.imagemProduto}
+        />));
+    return map;
+};
+
+const App:React.FunctionComponent = () => (
         <div className="App">
-            {data.map(dados => (<Produto
-                precoProduto = {dados.precoProduto}
-                nomeProduto = {dados.nomeProduto}
-                descricaoProduto = {dados.descricaoProduto}
-                imagemProduto = {dados.imagemProduto}
-            />))}
+            {produtoMap(data)}
+            {produtoMap(data)}
+            {produtoMap(data)}
+            {produtoMap(data)}
         </div>
     );
-}
 
 export default App;

@@ -7,9 +7,8 @@ import user from './imagens/Icones/user.png'
 /*
     Componente da barra de navegação, que será reaproveitado em todo o front do projeto
  */
-const Navbar:React.FunctionComponent = () => {
+const Navbar:React.FunctionComponent = () => (
 
-return (
     <header>
         <nav>
             <img id="logo" src={logo} alt="Logo do site"/>
@@ -34,7 +33,7 @@ return (
 
         </nav>
     </header>
+
 );
-  }
 
   export default Navbar;

@@ -6,10 +6,10 @@ type produtoProp = {
     nomeProduto:string,
     descricaoProduto:string,
     imagemProduto:string,
-}
+};
 
-const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
-    return(
+const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => (
+
         <div id='containerProduto'>
             <p className="nomeProduto">{props.nomeProduto}</p>
             <img className="imagemProduto" src={props.imagemProduto} alt={props.nomeProduto} />
@@ -17,7 +17,7 @@ const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
             <p className="precoProduto">Preco: {props.precoProduto}</p>
             <button className="botaoProduto">Comprar</button>
         </div>
-    )
-}
 
-export default Produto
+);
+
+export default Produto;
