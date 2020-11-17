@@ -4,7 +4,8 @@
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    flex-basis: 60%;
+    flex-basis: 75%;
+    margin-top: 25px;
 }
 
 .landingBody {
