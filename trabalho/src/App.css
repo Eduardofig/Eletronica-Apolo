@@ -1,7 +1,10 @@
 .App {
     text-align: center;
+    justify-content:center;
     display:flex;
     flex-direction:row;
+    flex-wrap:wrap;
+    flex-basis: 50%;
 }
 
 .landingBody {

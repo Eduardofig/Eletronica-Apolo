@@ -11,7 +11,7 @@ ReactDOM.render(
         <div>
             <div className = 'landingBody'>
                 <Navbar/>
-                <Register/>
+                <App/>
             </div>
         </div>,
     document.getElementById('root')

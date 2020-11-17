@@ -6,7 +6,7 @@
     padding:20px;
     box-shadow: 0 4px 8px 2px rgba(0, 0, 0, 0.2);
     max-width: 300px;
-    margin: auto;
+    margin: 0;
     font-family: arial;
 }
 
@@ -39,4 +39,9 @@
 
 .nomeProduto {
     font-weight: bold;
+}
+
+.imagemProduto {
+    width:250px;
+    height:20vh;
 }
