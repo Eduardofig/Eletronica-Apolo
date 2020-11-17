@@ -2,17 +2,16 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './App.css';
 import Navbar from './Navbar';
-
 import reportWebVitals from './reportWebVitals';
+import Register from './Register';
 
 ReactDOM.render(
         <div>
             <div className = 'landingBody'>
                 <Navbar/>
-                <App />
-                <App />
-                <App />
+                <Register/>
             </div>
         </div>,
     document.getElementById('root')
