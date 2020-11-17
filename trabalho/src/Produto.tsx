@@ -8,7 +8,7 @@ type produtoProp = {
     imagemProduto:string,
 }
 
-const Produto = (props:produtoProp) => {
+function Produto (props:produtoProp) {
     return(
         <div id='containerProduto'>
             <p className="nomeProduto">{props.nomeProduto}</p>
@@ -17,7 +17,7 @@ const Produto = (props:produtoProp) => {
             <p className="precoProduto">Preco: {props.precoProduto}</p>
             <button className="botaoProduto">Comprar</button>
         </div>
-        )
+    )
 }
 
 export default Produto

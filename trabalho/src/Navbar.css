@@ -3,6 +3,7 @@ header{
     color: white;
     font-weight: bold;
     font-family: sans-serif;
+    width:100%;
 }
 header #search{
     margin-bottom: 2em;
