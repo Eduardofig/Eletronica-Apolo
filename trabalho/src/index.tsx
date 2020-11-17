@@ -6,12 +6,14 @@ import './App.css';
 import Navbar from './Navbar';
 import reportWebVitals from './reportWebVitals';
 import Register from './Register';
+import Address from './Address';
+import Payment from './Payment';
 
 ReactDOM.render(
         <div>
             <div className = 'landingBody'>
                 <Navbar/>
-                <App/>
+                <Payment/>
             </div>
         </div>,
     document.getElementById('root')
