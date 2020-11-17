@@ -8,7 +8,7 @@ type produtoProp = {
     imagemProduto:string,
 }
 
-function Produto (props:produtoProp) {
+const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
     return(
         <div id='containerProduto'>
             <p className="nomeProduto">{props.nomeProduto}</p>

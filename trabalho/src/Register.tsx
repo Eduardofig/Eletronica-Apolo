@@ -4,10 +4,9 @@ import './Register.css';
 /*  
     Página de registro, contendo uma caixa para Login e uma Caixa para cadastro
 */
-export default function Register(){
+const Register:React.FunctionComponent = () => {
 
     return(
-
         <div id="container-forms">
             
             <form id="login-box">
@@ -33,6 +32,7 @@ export default function Register(){
                 <button id='btn-register'>Cadastrar</button>
             </form>
         </div>
-
     );
-}
+};
+
+export default Register;
