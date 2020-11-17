@@ -25,6 +25,7 @@ header #logo{
 header #cart{
     width: 25px;
     margin-right:1%;
+    color: white;
 }
 header #user{
     width: 25px;
