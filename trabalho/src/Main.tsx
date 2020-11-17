@@ -24,7 +24,7 @@ const produtoMap:Function = (data:Array<produtoProps>) => {
 
 const App:React.FunctionComponent = () => (
 
-    <div className="landingbody">
+    <div className="landingBody">
         <div className="App">
             {produtoMap(data)}
             {produtoMap(data)}
