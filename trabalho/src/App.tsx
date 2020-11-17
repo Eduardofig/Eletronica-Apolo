@@ -12,7 +12,7 @@ interface produtoProps {
     imagemProduto:string;
 }
 
-const produtoMap = (data:Array<produtoProps>) => {
+const produtoMap:Function = (data:Array<produtoProps>) => {
     let map = data.map(dados => (<Produto
             precoProduto = {dados.precoProduto}
             nomeProduto = {dados.nomeProduto}
