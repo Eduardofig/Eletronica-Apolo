@@ -2,14 +2,20 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
+import './App.css';
+import Navbar from './Navbar';
 import reportWebVitals from './reportWebVitals';
+import Register from './Register';
 
 ReactDOM.render(
-  <React.StrictMode>
-    <App />
-  </React.StrictMode>,
-  document.getElementById('root')
-);
+        <div>
+            <div className = 'landingBody'>
+                <Navbar/>
+                <App/>
+            </div>
+        </div>,
+    document.getElementById('root')
+    );
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

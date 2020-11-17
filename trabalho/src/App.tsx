@@ -1,26 +1,34 @@
 import React from 'react';
 import logo from './logo.svg';
 import './App.css';
+import Produto from './Produto';
+import Navbar from './Navbar';
+import data from './AppData';
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+interface produtoProps {
+    precoProduto:string;
+    nomeProduto:string;
+    descricaoProduto:string;
+    imagemProduto:string;
 }
+
+const produtoMap:Function = (data:Array<produtoProps>) => {
+    let map = data.map(dados => (<Produto
+            precoProduto = {dados.precoProduto}
+            nomeProduto = {dados.nomeProduto}
+            descricaoProduto = {dados.descricaoProduto}
+            imagemProduto = {dados.imagemProduto}
+        />));
+    return map;
+};
+
+const App:React.FunctionComponent = () => (
+        <div className="App">
+            {produtoMap(data)}
+            {produtoMap(data)}
+            {produtoMap(data)}
+            {produtoMap(data)}
+        </div>
+    );
 
 export default App;
