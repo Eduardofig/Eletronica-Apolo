@@ -1,19 +1,19 @@
-import React, {useState} from "react"
-import "./Produto.css"
+import React, {useState} from "react";
+import "./Produto.css";
 
 type produtoProp = {
     precoProduto:string,
     nomeProduto:string,
-    quantidadeProduto:string,
+    descricaoProduto:string,
     imagemProduto:string,
 }
 
-function Produto(props:produtoProp){
+const Produto = (props:produtoProp) => {
     return(
         <div id='containerProduto'>
-            <img className="imagemProduto" src={props.imagemProduto} alt={props.nomeProduto} />
             <p className="nomeProduto">{props.nomeProduto}</p>
-            <p className="quantidadeProduto">Quantidade: {props.quantidadeProduto}</p>
+            <img className="imagemProduto" src={props.imagemProduto} alt={props.nomeProduto} />
+            <p className="descricaoProduto">{props.descricaoProduto}</p>
             <p className="precoProduto">Preco: {props.precoProduto}</p>
             <button className="botaoProduto">Comprar</button>
         </div>
