@@ -2,7 +2,7 @@ import React from 'react';
 import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
-import './App.css';
+import Main from './Main';
 import Navbar from './Navbar';
 import reportWebVitals from './reportWebVitals';
 import Register from './Register';
@@ -11,10 +11,7 @@ import Payment from './Payment';
 
 ReactDOM.render(
         <div>
-            <div className = 'landingBody'>
-                <Navbar/>
-                <Payment/>
-            </div>
+            <App/>
         </div>,
     document.getElementById('root')
     );

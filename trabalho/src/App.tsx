@@ -1,34 +1,18 @@
 import React from 'react';
-import logo from './logo.svg';
-import './App.css';
-import Produto from './Produto';
+import 'react-router-dom';
+import Routes from './routes';
 import Navbar from './Navbar';
-import data from './AppData';
+import './Main.css';
 
-interface produtoProps {
-    precoProduto:string;
-    nomeProduto:string;
-    descricaoProduto:string;
-    imagemProduto:string;
-}
 
-const produtoMap:Function = (data:Array<produtoProps>) => {
-    let map = data.map(dados => (<Produto
-            precoProduto = {dados.precoProduto}
-            nomeProduto = {dados.nomeProduto}
-            descricaoProduto = {dados.descricaoProduto}
-            imagemProduto = {dados.imagemProduto}
-        />));
-    return map;
-};
+export default function App() {
 
-const App:React.FunctionComponent = () => (
-        <div className="App">
-            {produtoMap(data)}
-            {produtoMap(data)}
-            {produtoMap(data)}
-            {produtoMap(data)}
-        </div>
+    return(
+      <div className="landingBody">
+      <Navbar/>
+      <Routes/>
+      </div>
     );
-
-export default App;
+  
+  }
+    
