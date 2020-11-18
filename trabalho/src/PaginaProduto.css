@@ -26,3 +26,8 @@
     position: relative;
     justify-content: flex-end;
 }
+
+.pagProdutoPreco {
+    color: grey;
+    font-size: 17px;
+}

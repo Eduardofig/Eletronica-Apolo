@@ -6,7 +6,7 @@ import Navbar from './Navbar';
 import data from './AppData';
 
 interface produtoProps {
-    precoProduto:string;
+    precoProduto:number;
     nomeProduto:string;
     descricaoProduto:string;
     imagemProduto:string;

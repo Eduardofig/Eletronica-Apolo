@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './PaginaProduto.css';
 
 interface produtoProp {
-    precoProduto:string;
+    precoProduto:number;
     nomeProduto:string;
     descricaoProduto:string;
     imagemProduto:string;
@@ -31,10 +31,11 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) =
                 </div>
                 <div className="right-container">
                     <h2 className="pagProdutoTitulo">{props.nomeProduto}</h2>
+                    <p className="pagProdutoPreco">R$ {String(props.precoProduto)}</p>
                     <p className="pagProdutoDescricao">{props.descricaoProduto}</p>
                     <label>Quantidade: </label> <br></br>
                     <input id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
-                    <p className="pagProdutoQuantidade">{quantidade}</p>
+                    <p className="pagProdutoQuantidade">{String(quantidade)}</p>
                     <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
                     <button className="pagProdutoButton">Comprar</button>
                 </div>
