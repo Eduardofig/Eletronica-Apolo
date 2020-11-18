@@ -13,6 +13,14 @@
     margin-right: 20%;
 }
 
+.pagProdutoImagem{
+
+    margin-top: 20px;
+    border: 2px solid gray;
+    border-radius: 5px;
+
+}
+
 .right-container{
     float:right;
     position: relative;

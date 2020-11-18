@@ -41,6 +41,11 @@ header ul li{
     display: table-cell;
     padding: 4px;
 }
+
+header a {
+    text-decoration: none;
+    color: white;
+}
 header #entrar{
     display: inline;
 }

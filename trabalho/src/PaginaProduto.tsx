@@ -27,7 +27,7 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) =
             <h2>Página do produto</h2>
             <div className="pagProdutoContainer">
                 <div className="left-container">
-                    <img className="pagProdutdoImagem" src={props.imagemProduto} alt={props.nomeProduto} />
+                    <img className="pagProdutoImagem" src={props.imagemProduto} alt={props.nomeProduto} />
                 </div>
                 <div className="right-container">
                     <h2 className="pagProdutoTitulo">{props.nomeProduto}</h2>

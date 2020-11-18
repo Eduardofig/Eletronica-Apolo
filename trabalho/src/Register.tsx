@@ -7,30 +7,34 @@ import './Register.css';
 const Register:React.FunctionComponent = () => {
 
     return(
-        <div id="container-forms">
+        <div>
+            <h2>Entrar</h2>
             
-            <form id="login-box">
-
-                E-mail <br/>
-                <input placeholder="Digite seu e-mail" type="text"/><br></br>
-                Senha <br/>
-                <input placeholder="Digite sua senha" type="text"/><br></br>
-                
-                <button id="btn-login">Login</button>
+            <div id="container-forms">
             
-            </form>
+                <form id="login-box">
 
-            <form id="register-box">
+                    E-mail <br/>
+                    <input placeholder="Digite seu e-mail" type="text"/><br></br>
+                    Senha <br/>
+                    <input placeholder="Digite sua senha" type="text"/><br></br>
+                    
+                    <button id="btn-login">Login</button>
                 
-                E-mail <br/>
-                <input placeholder="Digite seu e-mail" type="text"/><br></br>
-                Senha <br/>
-                <input placeholder="Digite sua senha" type="text"/><br></br>
-                Confirmar senha <br/>
-                <input placeholder="Confirme sua senha" type="text"/><br></br>
+                </form>
 
-                <button id='btn-register'>Cadastrar</button>
-            </form>
+                <form id="register-box">
+                    
+                    E-mail <br/>
+                    <input placeholder="Digite seu e-mail" type="text"/><br></br>
+                    Senha <br/>
+                    <input placeholder="Digite sua senha" type="text"/><br></br>
+                    Confirmar senha <br/>
+                    <input placeholder="Confirme sua senha" type="text"/><br></br>
+
+                    <button id='btn-register'>Cadastrar</button>
+                </form>
+            </div>
         </div>
     );
 };

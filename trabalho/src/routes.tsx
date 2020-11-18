@@ -5,6 +5,7 @@ import Payment from './Payment';
 import Main from './Main';
 import Register from './Register';
 import PaginaDeCompra from './PaginaDeCompra';
+import Cart from './Cart';
 
 const Routes:React.FunctionComponent = () =>(
         <BrowserRouter>
@@ -14,6 +15,7 @@ const Routes:React.FunctionComponent = () =>(
                 <Route path="/Address" exact component={Address}/>
                 <Route path="/Payment" exact component={Payment}/>
                 <Route path="/Register" exact component={Register}/>
+                <Route path="/Cart" exact component={Cart}/>
             </Switch>
         </BrowserRouter>
     );
