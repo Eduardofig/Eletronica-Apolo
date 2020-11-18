@@ -1,26 +1,37 @@
-import React, {useState} from 'react'
+import React, {useState} from 'react';
+import './PaginaProduto.css';
 
-type produtoProp = {
-    precoProduto:string,
-    nomeProduto:string,
-    descricaoProduto:string,
-    imagemProduto:string,
+interface produtoProp {
+    precoProduto:string;
+    nomeProduto:string;
+    descricaoProduto:string;
+    imagemProduto:string;
 };
 
+const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
 
+    const[quantidade, setQuantidade] = useState(1);
 
-const paginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
+    const alterarQuantidade:Function = (aumentar:boolean) => {
+        if (aumentar) {
+            setQuantidade(quantidade + 1);
+        } else if (quantidade > 1) {
+            setQuantidade(quantidade - 1);
+        }
+        return;
+    };
 
-const[quantidade, setQuantidade] = useState(1);
-
-const aumentarQuantidade:Function = () => {
-    setQuantidade(quantidade + 1);
-    }
     return(
-        <div>
-            <img className="pagProdutdoImagem" src={props.imagemProduto} alt="" />
+        <div className="pagProdutoContainer">
+            <h1 className="pagProdutoTitulo">{props.nomeProduto}</h1>
+            <img className="pagProdutdoImagem" src={props.imagemProduto} alt={props.nomeProduto} />
+            <p className="pagProdutoDescricao">{props.descricaoProduto}</p>
+            <label>Quantidade: </label>
+            <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
+            <p className="pagProdutoQuantidade">{quantidade}</p>
+            <input id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
         </div>
-    )
-}
+    );
+};
 
-export default paginaProduto
+export default PaginaProduto;
