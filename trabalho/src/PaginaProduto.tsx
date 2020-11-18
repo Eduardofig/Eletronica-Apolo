@@ -22,15 +22,24 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) =
     };
 
     return(
-        <div className="pagProdutoContainer">
-            <h1 className="pagProdutoTitulo">{props.nomeProduto}</h1>
-            <img className="pagProdutdoImagem" src={props.imagemProduto} alt={props.nomeProduto} />
-            <p className="pagProdutoDescricao">{props.descricaoProduto}</p>
-            <label>Quantidade: </label>
-            <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
-            <p className="pagProdutoQuantidade">{quantidade}</p>
-            <input id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
-            <button className="pagProdutoButton">Comprar</button>
+
+        <div className="tudo">
+            <h2>Página do produto</h2>
+            <div className="pagProdutoContainer">
+                <div className="left-container">
+                    <img className="pagProdutdoImagem" src={props.imagemProduto} alt={props.nomeProduto} />
+                </div>
+                <div className="right-container">
+                    <h2 className="pagProdutoTitulo">{props.nomeProduto}</h2>
+                    <p className="pagProdutoDescricao">{props.descricaoProduto}</p>
+                    <label>Quantidade: </label>
+                    <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
+                    <p className="pagProdutoQuantidade">{quantidade}</p>
+                    <input id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
+                    <button className="pagProdutoButton">Comprar</button>
+                </div>
+                
+            </div>
         </div>
     );
 };

@@ -4,7 +4,7 @@ import './Payment1.css'
 const Payment:React.FunctionComponent = () => (
 
         <div>
-            <h3>Pagamento</h3>
+            <h2>Pagamento</h2>
             <div id="payment-container">
 
                 <form id="payment-box">

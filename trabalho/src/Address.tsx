@@ -4,7 +4,7 @@ import './Address.css';
 const Address:React.FunctionComponent = () => (
 
         <div>
-            <h3>Endereço</h3>
+            <h2>Endereço</h2>
             <div id="payment-container">
                 
                 <form id="address-box">
