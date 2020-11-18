@@ -2,7 +2,7 @@ import React from "react";
 import "./Produto.css";
 
 type produtoProp = {
-    precoProduto:string,
+    precoProduto:number,
     nomeProduto:string,
     descricaoProduto:string,
     imagemProduto:string,
@@ -14,7 +14,7 @@ const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => (
             <p className="nomeProduto">{props.nomeProduto}</p>
             <img className="imagemProduto" src={props.imagemProduto} alt={props.nomeProduto} />
             <p className="descricaoProduto">{props.descricaoProduto}</p>
-            <p className="precoProduto">Preco: {props.precoProduto}</p>
+            <p className="precoProduto">R$ {String(props.precoProduto + 1.23)}</p>
             <button className="botaoProduto">Comprar</button>
         </div>
 

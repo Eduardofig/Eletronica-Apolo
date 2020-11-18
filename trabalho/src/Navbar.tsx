@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import logo from './imagens/Icones/logo.png'
+import logo from './imagens/Icones/logo.svg'
 import { ImCart } from "react-icons/im";
 import { FaUserAlt } from "react-icons/fa";
 
@@ -18,8 +18,7 @@ const Navbar:React.FunctionComponent = () => (
             <FaUserAlt id="user"size={20} color="white"/>
 
             <ul id="entrar">
-                <li><a href="/Register">Login</a></li>
-                <li><a href="/Register">Cadastre-se</a></li>
+                <li><a href="/Register">Login ou Cadastre-se</a></li>
             </ul>
 
             <div id="menudenav">

@@ -5,14 +5,12 @@
 }
 form{
     border: gray 1px solid;
-    border-radius: 6px;
     padding: 15px;
 
 }
 
 #login-box input{
     margin-bottom: 10px;
-    border-radius: 8px;
 }
 
 button{
@@ -27,7 +25,6 @@ button{
     cursor: pointer;
     width: 100%;
     font-size: 18px;
-    border-radius: 5px;
 }
 
 button:hover{
