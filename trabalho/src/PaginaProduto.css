@@ -1,7 +1,8 @@
 .pagProdutoContainer{
     width: 100%;
     flex-direction: row;
-    
+    flex-wrap:nowrap;
+    align-items: center;
 }
 
 .left-container{
@@ -10,12 +11,10 @@
     flex-direction: row;
     justify-content: flex-start;
     margin-right: 20%;
-    align-items: center;
 }
 
 .right-container{
     float:right;
     position: relative;
-    align-items: center;
     justify-content: flex-end;
 }

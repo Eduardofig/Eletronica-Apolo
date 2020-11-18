@@ -32,10 +32,10 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) =
                 <div className="right-container">
                     <h2 className="pagProdutoTitulo">{props.nomeProduto}</h2>
                     <p className="pagProdutoDescricao">{props.descricaoProduto}</p>
-                    <label>Quantidade: </label>
-                    <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
-                    <p className="pagProdutoQuantidade">{quantidade}</p>
+                    <label>Quantidade: </label> <br></br>
                     <input id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
+                    <p className="pagProdutoQuantidade">{quantidade}</p>
+                    <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
                     <button className="pagProdutoButton">Comprar</button>
                 </div>
                 

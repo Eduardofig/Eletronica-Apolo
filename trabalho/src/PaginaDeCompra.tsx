@@ -3,7 +3,7 @@ import PaginaProduto from './PaginaProduto';
 
 const PaginaDeCompra:React.FunctionComponent = () =>{
     return(
-        <div>
+        <div style={{width:"57%"}}>
             <PaginaProduto 
                 nomeProduto="Arduino" 
                 precoProduto="100 R$"
