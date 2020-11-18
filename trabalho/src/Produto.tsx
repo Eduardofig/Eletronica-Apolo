@@ -1,11 +1,11 @@
 import React from "react";
 import "./Produto.css";
 
-type produtoProp = {
-    precoProduto:number,
-    nomeProduto:string,
-    descricaoProduto:string,
-    imagemProduto:string,
+interface produtoProp {
+    precoProduto:number;
+    nomeProduto:string;
+    descricaoProduto:string;
+    imagemProduto:string;
 };
 
 const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => (

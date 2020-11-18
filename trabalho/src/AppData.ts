@@ -1,5 +1,5 @@
 interface produtoProps {
-    precoProduto:string;
+    precoProduto:number;
     nomeProduto:string;
     descricaoProduto:string;
     imagemProduto:string;
