@@ -1,12 +1,6 @@
 import React, {useState} from 'react';
 import './PaginaProduto.css';
-
-interface produtoProp {
-    precoProduto:number;
-    nomeProduto:string;
-    descricaoProduto:string;
-    imagemProduto:string;
-};
+import {produtoProp} from './Interface';
 
 const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
 

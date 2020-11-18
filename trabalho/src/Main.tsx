@@ -4,15 +4,9 @@ import './Main.css';
 import Produto from './Produto';
 import Navbar from './Navbar';
 import data from './AppData';
+import {produtoProp} from './Interface';
 
-interface produtoProps {
-    precoProduto:number;
-    nomeProduto:string;
-    descricaoProduto:string;
-    imagemProduto:string;
-}
-
-const produtoMap:Function = (data:Array<produtoProps>) => {
+const produtoMap:Function = (data:Array<produtoProp>) => {
     let map = data.map(dados => (<Produto
             precoProduto = {dados.precoProduto}
             nomeProduto = {dados.nomeProduto}

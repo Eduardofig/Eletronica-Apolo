@@ -1,10 +1,6 @@
-interface produtoProps {
-    precoProduto:number;
-    nomeProduto:string;
-    descricaoProduto:string;
-    imagemProduto:string;
-}
-const data:Array<produtoProps> = [
+import {produtoProp} from './Interface';
+
+const data:Array<produtoProp> = [
     {
         precoProduto:100,
         nomeProduto:'Arduino',

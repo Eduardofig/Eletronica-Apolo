@@ -1,12 +1,6 @@
 import React from "react";
 import "./Produto.css";
-
-interface produtoProp {
-    precoProduto:number;
-    nomeProduto:string;
-    descricaoProduto:string;
-    imagemProduto:string;
-};
+import {produtoProp} from './Interface';
 
 const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => (
 
