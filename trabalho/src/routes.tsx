@@ -6,9 +6,7 @@ import Main from './Main';
 import Register from './Register';
 import PaginaDeCompra from './PaginaDeCompra';
 
-export default function Routes(){
-
-    return(
+const Routes:React.FunctionComponent = () =>(
         <BrowserRouter>
             <Switch>
                 <Route path="/" exact component={Main}/>
@@ -20,5 +18,4 @@ export default function Routes(){
         </BrowserRouter>
     );
 
-
-}
+export default Routes;

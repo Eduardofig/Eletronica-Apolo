@@ -1,9 +1,7 @@
 import React from 'react'
 import './Payment1.css'
 
-export default function Payment(){
-    
-    return(
+const Payment:React.FunctionComponent = () => (
 
         <div>
             <h3>Pagamento</h3>
@@ -26,5 +24,4 @@ export default function Payment(){
         </div>
     );
 
-}
-
+export default Payment;

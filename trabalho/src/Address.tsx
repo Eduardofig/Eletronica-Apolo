@@ -1,9 +1,7 @@
 import React from 'react'
 import './Address.css';
 
-export default function Address(){
-    
-    return(
+const Address:React.FunctionComponent = () => (
 
         <div>
             <h3>Endereço</h3>
@@ -28,4 +26,4 @@ export default function Address(){
 
     );
 
-}
+export default Address;

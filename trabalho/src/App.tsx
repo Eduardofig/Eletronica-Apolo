@@ -5,14 +5,12 @@ import Navbar from './Navbar';
 import './Main.css';
 
 
-export default function App() {
+const App:React.FunctionComponent = () => (
 
-    return(
       <div className="landingBody">
       <Navbar/>
       <Routes/>
       </div>
     );
-  
-  }
-    
+
+export default App;
