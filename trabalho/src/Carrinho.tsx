@@ -28,6 +28,7 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
                 </div>
                 ))}
             <p className="carTotal">Total : R${total}</p>
+            <button className="carFinalizar">Finalizar Compra</button>
         </div>
         )
 }

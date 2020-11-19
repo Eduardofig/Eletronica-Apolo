@@ -7,6 +7,10 @@
     flex-direction:row;
     justify-content:space-between;
     width:100%;
+    border:solid;
+    border-radius:6px;
+    border-color:lightblue;
+    border-width:1.9px;
 }
 
 .ImgNome {
@@ -28,4 +32,13 @@
 
 .carProdNome {
     font-weight:bold;
+}
+
+.carProdImg {
+    height:180px;
+    width: 180px;
+    border:solid;
+    border-style:ridge;
+    border-color:lightgray;
+    border-radius:6px;
 }
