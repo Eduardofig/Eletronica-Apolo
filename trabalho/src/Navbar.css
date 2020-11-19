@@ -76,7 +76,8 @@ header #entrar{
 
 #menudenav ul li:hover { 
     background-color:white;
-    color:rgb(11, 30, 136)
+    color:rgb(11, 30, 136);
+    border:none;
 }
 
 #menudenav ul li a {
