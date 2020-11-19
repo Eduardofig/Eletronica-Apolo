@@ -1,6 +1,9 @@
 import React from 'react';
 import './Cart.css';
 
+/*
+  Página do carrinho
+*/
 
 const Cart:React.FunctionComponent = () =>(
 

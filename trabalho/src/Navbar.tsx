@@ -1,6 +1,6 @@
 import React from 'react';
 import './Navbar.css';
-import logo from './imagens/Icones/logo.svg'
+import cpu from './imagens/Icones/cpu.png'
 import { ImCart } from "react-icons/im";
 import { FaUserAlt } from "react-icons/fa";
 
@@ -11,7 +11,7 @@ const Navbar:React.FunctionComponent = () => (
 
     <header>
         <nav>
-            <img id="logo" src={logo} alt="Logo do site"/>
+            <img id="logo" src={cpu} alt="Logo do site"/>
             <input id="search" type="search" placeholder="O que você quer buscar"/>
 
             <a href="/Cart"><ImCart id="cart" size={20} color="white"/></a>
