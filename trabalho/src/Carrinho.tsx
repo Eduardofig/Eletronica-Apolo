@@ -28,7 +28,7 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
                 </div>
                 ))}
             <p className="carTotal">{total === 0? "Carrinho vazio!" : `Total : R$ ${total}`}</p>
-            <a href={total == 0? "/" : "/Payment"}><button className="carFinalizar">{total === 0? "Retornar à loja" : "Finalizar Compra"}</button></a>
+            <a href={total === 0? "/" : "/Payment"}><button className="carFinalizar">{total === 0? "Retornar à loja" : "Finalizar Compra"}</button></a>
         </div>
     )
 }

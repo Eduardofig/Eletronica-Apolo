@@ -1,8 +1,6 @@
 import React from 'react';
-import logo from './logo.svg';
 import './Main.css';
 import Produto from './Produto';
-import Navbar from './Navbar';
 import data from './AppData';
 import {produtoProp} from './Interface';
 
