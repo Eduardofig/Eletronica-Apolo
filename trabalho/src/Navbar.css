@@ -1,3 +1,6 @@
+a:hover, #user:hover, #cart:hover, li:hover {
+    transform: translateY(-2.7px);
+}
 header{
     background-color: rgb(11, 30, 136);
     color: white;
@@ -29,10 +32,10 @@ header #cart{
 header #user{
     width: 25px;
     margin-right:2%;
-  }
-  #login{
+}
+#login{
     margin-right:1%;
-  }
+}
 header ul{
     display: table;
 }
@@ -83,6 +86,5 @@ header #entrar{
 }
 
 #menudenav ul li a:hover { 
-    background-color:white;
     color:rgb(11, 30, 136)
 }
