@@ -1,0 +1,31 @@
+.containerCarrinho {
+    width:60%;
+}
+
+.containerCarrinhoProdutos {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+}
+
+.ImgNome {
+    justify-self:flex-start;
+}
+
+.End {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    flex-basis:1%;
+    justify-self:flex-end;
+}
+
+.carProdPreco,.carTotal {
+    color: grey;
+    font-size: 17px;
+}
+
+.carProdNome {
+    font-weight:bold;
+}

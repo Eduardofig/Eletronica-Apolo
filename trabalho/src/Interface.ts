@@ -4,3 +4,7 @@ export interface produtoProp {
     descricaoProduto:string;
     imagemProduto:string;
 };
+
+export interface carrinhoProp {
+    array:Array<produtoProp>;
+}
