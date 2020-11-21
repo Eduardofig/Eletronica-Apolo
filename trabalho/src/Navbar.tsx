@@ -24,9 +24,9 @@ const Navbar:React.FunctionComponent = () => (
             <div id="menudenav">
                 <ul>
                     <li><a href="/">Home</a></li>
-                    <li><a>Produtos</a></li>
-                    <li><a>Missão</a></li>
-                    <li><a>Contato</a></li>
+                    <li><a href="/">Produtos</a></li>
+                    <li><a href="/">Missão</a></li>
+                    <li><a href="/">Contato</a></li>
                 </ul>
             </div>
 
