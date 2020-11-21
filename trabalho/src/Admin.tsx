@@ -8,7 +8,22 @@ import './Admin.css';
 const Admin:React.FunctionComponent = () => (
 
         <div>
-            <h2>Página do administrador</h2>            
+            <h2>Incluir Produtos</h2>  
+            <div id="register-container">
+                <form id="register-box">
+                    Nome do Produto<br/>
+                    <input placeholder="Digite o nome do produto" type="text"/><br></br>
+                    Valor do Produto<br/>
+                    <input placeholder="Digite o valor do produto" type="text"/><br></br>
+                    Quantidade<br/>
+                    <input placeholder="Digite a quantidade de produtos" type="number"/><br></br>
+                    Código do Produto <br/>
+                    <input placeholder="Digite o código do produto" type="text"/><br></br>
+                    Descrição do Produto <br/>
+                    <textarea rows={10} cols={60} placeholder="Descreva o produto ..."></textarea><br></br>
+                    <button>Cadastrar</button>
+                </form>
+            </div>       
         </div>
 
     );
