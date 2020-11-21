@@ -2,6 +2,7 @@ import React from 'react';
 import './Main.css';
 import Produto from './Produto';
 import data from './AppData';
+import {Helmet} from 'react-helmet';
 import {produtoProp} from './Interface';
 
 const produtoMap:Function = (data:Array<produtoProp>) => {
@@ -17,6 +18,9 @@ const produtoMap:Function = (data:Array<produtoProp>) => {
 const App:React.FunctionComponent = () => (
 
     <div className="landingBody">
+        <Helmet>
+            <title>Home</title>
+        </Helmet>
         <div className="App">
             {produtoMap(data)}
             {produtoMap(data)}

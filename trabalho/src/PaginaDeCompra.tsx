@@ -1,10 +1,13 @@
 import React from "react"
-
+import {Helmet} from 'react-helmet';
 import PaginaProduto from './PaginaProduto';
 
 const PaginaDeCompra:React.FunctionComponent = () =>{
     return(
         <div style={{width:"57%"}}>
+            <Helmet>
+                <title>Placa de Arduino</title>
+            </Helmet>
             <PaginaProduto 
                 nomeProduto="Arduino" 
                 precoProduto={100}

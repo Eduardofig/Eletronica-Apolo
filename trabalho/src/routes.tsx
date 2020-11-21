@@ -6,7 +6,6 @@ import Main from './Main';
 import Register from './Register';
 import PaginaDeCompra from './PaginaDeCompra';
 import PagCarrinho from './PagCarrinho';
-import Cart from './Cart';
 import Admin from './Admin';
 
 /*  
@@ -22,7 +21,6 @@ const Routes:React.FunctionComponent = () =>(
                 <Route path="/Address" exact component={Address}/>
                 <Route path="/Payment" exact component={Payment}/>
                 <Route path="/Register" exact component={Register}/>
-                <Route path="/Cart" exact component={Cart}/>
                 <Route path="/Admin" exact component={Admin}/>
             </Switch>
         </BrowserRouter>

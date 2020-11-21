@@ -1,5 +1,6 @@
 import React from 'react'
 import './Address.css';
+import {Helmet} from 'react-helmet';
 
 /*
     Página de endereço
@@ -10,7 +11,9 @@ const Address:React.FunctionComponent = () => (
         <div>
             <h2>Endereço</h2>
             <div id="payment-container">
-                
+                <Helmet>
+                    <title>Endereço</title>
+                </Helmet>
                 <form id="address-box">
 
                 CEP <br/>

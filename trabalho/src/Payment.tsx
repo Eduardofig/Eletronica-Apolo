@@ -1,5 +1,6 @@
 import React from 'react'
 import './Payment1.css'
+import {Helmet} from 'react-helmet';
 
 /*
     Página de pagamento
@@ -8,6 +9,9 @@ import './Payment1.css'
 const Payment:React.FunctionComponent = () => (
 
         <div>
+            <Helmet>
+                <title>Pagamento</title>
+            </Helmet>
             <h2>Pagamento</h2>
             <div id="payment-container">
 

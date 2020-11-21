@@ -1,5 +1,6 @@
 import React from 'react'
 import './Admin.css';
+import {Helmet} from 'react-helmet';
 
 /*
     Página do administrador, para cadastro dos produtos
@@ -9,6 +10,9 @@ const Admin:React.FunctionComponent = () => (
 
         <div>
             <h2>Incluir Produtos</h2>  
+            <Helmet>
+                <title>Admin</title>
+            </Helmet>
             <div id="register-container">
                 <form id="register-box">
                     Nome do Produto<br/>

@@ -1,5 +1,6 @@
 import React from 'react';
 import './Register.css';
+import {Helmet} from 'react-helmet';
 
 /*  
     Página de registro, contendo uma caixa para Login e uma Caixa para cadastro
@@ -8,6 +9,9 @@ const Register:React.FunctionComponent = () => {
 
     return(
         <div>
+            <Helmet>
+                <title>Entrar</title>
+            </Helmet>
             <h2>Entrar</h2>
             
             <div id="container-forms">

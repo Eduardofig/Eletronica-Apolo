@@ -1,7 +1,7 @@
 import React, {useState} from "react";
 import {carrinhoProp, produtoProp} from './Interface';
 import './Carrinho.css';
-
+import {Helmet} from 'react-helmet';
 
 const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
 
@@ -19,6 +19,9 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
     return(
 
         <div className="containerCarrinho">
+            <Helmet>
+                <title>Carrinho</title>
+            </Helmet>
             {produtos.map(produto => (
                 <div className="containerCarrinhoProdutos">
                     <div className="ImgNome">
