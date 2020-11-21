@@ -26,7 +26,7 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nome
                 <div className="right-container">
                     <h2 className="pagProdutoTitulo">{nomeProduto}</h2>
                     <p className="pagProdutoPreco">R$ {String(precoProduto)}</p>
-                    <p className="pagProdutoDescricao">{ descricaoProduto}</p>
+                    <p className="pagProdutoDescricao">{descricaoProduto}</p>
                     <label>Quantidade: </label> <br></br>
                     <button id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
                     <p className="pagProdutoQuantidade">{String(quantidade)}</p>
