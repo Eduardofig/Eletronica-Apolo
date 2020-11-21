@@ -9,7 +9,9 @@ const Produto:React.FunctionComponent<produtoProp> = (props:produtoProp) => (
             <img className="imagemProduto" src={props.imagemProduto} alt={props.nomeProduto} />
             <p className="descricaoProduto">{props.descricaoProduto}</p>
             <p className="precoProduto">R$ {String(props.precoProduto + 1.23)}</p>
-            <button className="botaoProduto">Comprar</button>
+            <a className="aProduto" href="/PaginaDeCompra">
+                <button className="botaoProduto">Comprar</button>
+            </a>
         </div>
 
 );

@@ -23,7 +23,9 @@ const Register:React.FunctionComponent = () => {
                     Senha <br/>
                     <input placeholder="Digite sua senha" type="text"/><br></br>
                     
-                    <button id="btn-login">Login</button>
+                    <a href="/PagCarrinho">
+                        <button id="btn-login">Login</button>
+                    </a>
                 
                 </form>
 

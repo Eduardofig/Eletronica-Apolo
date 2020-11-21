@@ -31,7 +31,9 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) =
                     <input id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
                     <p className="pagProdutoQuantidade">{String(quantidade)}</p>
                     <input id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />
-                    <button className="pagProdutoButton">Comprar</button>
+                    <a href="/PagCarrinho">
+                        <button className="pagProdutoButton">Comprar</button>
+                    </a>
                 </div>
                 
             </div>

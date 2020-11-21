@@ -25,8 +25,10 @@ const Payment:React.FunctionComponent = () => (
                 <input placeholder="Validade" type="text"/><br></br>
                 Nome do Titular <br/>
                 <input placeholder="Digite o nome do titular" type="text"/><br></br>
+                <a href="/Address">
+                    <button id='btn-register'>Avançar</button>
+                </a>
 
-                <button id='btn-register'>Avançar</button>
                 </form>
             </div>
         </div>
