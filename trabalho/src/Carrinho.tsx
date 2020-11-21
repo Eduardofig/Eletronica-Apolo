@@ -3,10 +3,10 @@ import {carrinhoProp, produtoProp} from './Interface';
 import './Carrinho.css';
 import {Helmet} from 'react-helmet';
 
-const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
+const Carrinho:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) => {
 
-    var initTotal:number = props.array.reduce((a, b) => (a + b.precoProduto), 0);
-    const [produtos, setProdutos] = useState(props.array);
+    var initTotal:number = array.reduce((a, b) => (a + b.precoProduto), 0);
+    const [produtos, setProdutos] = useState( array);
     const [total, setTotal] = useState(initTotal);
     const removerProduto = (_produto:produtoProp) => {
 

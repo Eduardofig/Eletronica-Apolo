@@ -2,7 +2,7 @@ import React, {useState} from 'react';
 import './PaginaProduto.css';
 import {produtoProp} from './Interface';
 
-const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) => {
+const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nomeProduto, precoProduto, descricaoProduto}:produtoProp) => {
 
     const[quantidade, setQuantidade] = useState(1);
 
@@ -21,12 +21,12 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = (props:produtoProp) =
             <h2>Página do produto</h2>
             <div className="pagProdutoContainer">
                 <div className="left-container">
-                    <img className="pagProdutoImagem" src={props.imagemProduto} alt={props.nomeProduto} />
+                    <img className="pagProdutoImagem" src={imagemProduto} alt={nomeProduto} />
                 </div>
                 <div className="right-container">
-                    <h2 className="pagProdutoTitulo">{props.nomeProduto}</h2>
-                    <p className="pagProdutoPreco">R$ {String(props.precoProduto)}</p>
-                    <p className="pagProdutoDescricao">{props.descricaoProduto}</p>
+                    <h2 className="pagProdutoTitulo">{nomeProduto}</h2>
+                    <p className="pagProdutoPreco">R$ {String(precoProduto)}</p>
+                    <p className="pagProdutoDescricao">{ descricaoProduto}</p>
                     <label>Quantidade: </label> <br></br>
                     <button id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
                     <p className="pagProdutoQuantidade">{String(quantidade)}</p>
