@@ -4,15 +4,20 @@ import './Carrinho.css';
 
 
 const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
+
     var initTotal:number = props.array.reduce((a, b) => (a + b.precoProduto), 0);
     const [produtos, setProdutos] = useState(props.array);
     const [total, setTotal] = useState(initTotal);
     const removerProduto = (_produto:produtoProp) => {
+
         setProdutos(produtos.filter(produto => (produto !== _produto)));
         setTotal(total - _produto.precoProduto)
         return;
+
     }
+
     return(
+
         <div className="containerCarrinho">
             {produtos.map(produto => (
                 <div className="containerCarrinhoProdutos">
@@ -30,6 +35,7 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = (props:carrinhoProp) => {
             <p className="carTotal">{total === 0? "Carrinho vazio!" : `Total : R$ ${total}`}</p>
             <a href={total === 0? "/" : "/Payment"}><button className="carFinalizar">{total === 0? "Retornar à loja" : "Finalizar Compra"}</button></a>
         </div>
+
     )
 }
 
