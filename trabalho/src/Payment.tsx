@@ -1,5 +1,5 @@
 import React from 'react'
-import './Payment1.css'
+import './Payment.css'
 import {Helmet} from 'react-helmet';
 
 /*

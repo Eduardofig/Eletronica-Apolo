@@ -8,13 +8,13 @@ import {Helmet} from 'react-helmet';
 
 const Address:React.FunctionComponent = () => (
 
-        <div>
+        <div className='main-container'>
             <h2>Endereço</h2>
             <div id="payment-container">
                 <Helmet>
                     <title>Endereço</title>
                 </Helmet>
-                <form className="box">
+                <form >
 
                 CEP <br/>
                 <input placeholder="Digite seu CEP" type="text"/><br></br>
