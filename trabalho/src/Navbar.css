@@ -31,15 +31,21 @@ header #logo{
     width: 80px;
     transform:translate(8vw, 4vh);
 }
-header #cart{
+
+header .icon{
+    margin-right: 20px;
+    padding-inline-start: 0;
+}
+header #cart-icon{
     width: 25px;
-    margin-right:1%;
+    margin-right:5px;
     color: white;
 }
-header #user{
-    width: 25px;
-    margin-right:2%;
+
+header #user-icon{
+    margin-right: 5px;
 }
+
 #login{
     margin-right:1%;
 }

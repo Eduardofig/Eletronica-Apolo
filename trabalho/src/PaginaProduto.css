@@ -29,7 +29,8 @@
 
 .pagProdutoPreco {
     color: grey;
-    font-size: 17px;
+    font-size: 25px;
+    font-weight: 500;
 }
 
 #leftArrow {

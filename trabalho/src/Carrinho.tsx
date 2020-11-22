@@ -32,7 +32,7 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) =>
                     <div className="End">
                         <div className="carDados">
                             <p className="carProdDescricao">{produto.descricaoProduto}</p>    
-                            <p className="carProdPreco">R${produto.precoProduto}</p>
+                            <p className="carProdPreco">R${String(produto.precoProduto) + ',00'}</p>
                         </div>
                         <button id="btn-remocao" onClick={() => removerProduto(produto)}>Remover</button>
                     </div>

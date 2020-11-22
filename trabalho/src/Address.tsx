@@ -10,11 +10,11 @@ const Address:React.FunctionComponent = () => (
 
         <div className='main-container'>
             <h2>Endereço</h2>
-            <div id="payment-container">
+            <div id="address-container">
                 <Helmet>
                     <title>Endereço</title>
                 </Helmet>
-                <form >
+                <form id="payment-box">
 
                 CEP <br/>
                 <input placeholder="Digite seu CEP" type="text"/><br></br>
