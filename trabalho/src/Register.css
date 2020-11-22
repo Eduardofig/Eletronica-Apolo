@@ -1,12 +1,20 @@
+#register-page{
+    width: 100%;
+}
+
 #container-forms{
     display:flex;
     align-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
     margin-top: 10vh;
+    width: 100%;
 }
+
 form{
     border: gray 1px solid;
     padding: 15px;
-
+    margin-bottom: 30px;
 }
 
 #login-box input{

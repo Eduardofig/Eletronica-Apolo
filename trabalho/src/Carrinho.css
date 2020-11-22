@@ -1,5 +1,5 @@
 .containerCarrinho {
-    width:60%;
+    width:70%;
 }
 
 .containerCarrinhoProdutos {
@@ -11,27 +11,50 @@
     border-radius:6px;
     border-color:lightblue;
     border-width:1.9px;
+    margin: 10px 0 20px 0;
+    padding-bottom: 10px;
 }
 
 .ImgNome {
     justify-self:flex-start;
+    margin-left: 10px;
 }
 
 .End {
     display:flex;
     flex-direction:row;
     flex-wrap:wrap;
-    flex-basis:1%;
+    flex-basis:20%;
     justify-self:flex-end;
+    margin-right: 10px;
 }
 
-.carProdPreco,.carTotal {
+.carProdDescricao{
+    width:auto;
+}
+
+.carDados{
+    height:70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 90%;
+}
+
+.carProdPreco{
     color: grey;
-    font-size: 17px;
+    font-size: 24px;
+    font-weight: 400;
+    justify-self: flex-end;
 }
 
 .carProdNome {
     font-weight:bold;
+    font-size: 20px;
+}
+
+#btn-remocao{
+    align-self: flex-end;
 }
 
 .carProdImg {
@@ -42,3 +65,15 @@
     border-color:lightgray;
     border-radius:6px;
 }
+
+.carTotal{
+    color: rgb(25, 19, 114);
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.carFinalizar{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+

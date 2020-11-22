@@ -2,6 +2,25 @@
     font-family: 'Roboto', sans-serif;
 }
 
+.box{
+    width:300px;
+    height: 350px;
+}
+
+form{
+    font-size: 25px;
+}
+
+form input{
+    outline-color: rgb(81, 221, 221);
+    padding: 6px 7px 6px 7px;
+    text-indent: 6px;
+}
+
+h2{
+    font-size: 30px;
+}
+
 button {
     cursor:pointer;
 }
@@ -21,4 +40,8 @@ button {
     flex-wrap:wrap;
     justify-content:center;
     align-items:center;
+}
+
+h2{
+    text-align: center;
 }

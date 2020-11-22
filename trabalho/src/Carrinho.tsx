@@ -19,6 +19,7 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) =>
     return(
 
         <div className="containerCarrinho">
+            <h2>Meu carrinho</h2>
             <Helmet>
                 <title>Carrinho</title>
             </Helmet>
@@ -29,9 +30,11 @@ const Carrinho:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) =>
                         <img className="carProdImg" src={produto.imagemProduto} alt={produto.nomeProduto}/>
                     </div>
                     <div className="End">
-                        <p className="carProdDescricao">{produto.descricaoProduto}</p>
-                        <p className="carProdPreco">R${produto.precoProduto}</p>
-                        <button onClick={() => removerProduto(produto)}>Remover</button>
+                        <div className="carDados">
+                            <p className="carProdDescricao">{produto.descricaoProduto}</p>    
+                            <p className="carProdPreco">R${produto.precoProduto}</p>
+                        </div>
+                        <button id="btn-remocao" onClick={() => removerProduto(produto)}>Remover</button>
                     </div>
                 </div>
                 ))}

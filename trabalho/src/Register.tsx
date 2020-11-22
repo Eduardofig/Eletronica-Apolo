@@ -8,7 +8,7 @@ import {Helmet} from 'react-helmet';
 const Register:React.FunctionComponent = () => {
 
     return(
-        <div>
+        <div id="register-page">
             <Helmet>
                 <title>Entrar</title>
             </Helmet>
@@ -16,20 +16,24 @@ const Register:React.FunctionComponent = () => {
             
             <div id="container-forms">
             
-                <form id="login-box">
+                <form className="box">
 
                     E-mail <br/>
                     <input placeholder="Digite seu e-mail" type="text"/><br></br>
                     Senha <br/>
                     <input placeholder="Digite sua senha" type="text"/><br></br>
-                    
-                    <a href="/PagCarrinho">
-                        <button id="btn-login">Login</button>
+                     
+                    <a id="login-link" href="/PagCarrinho">
+                        <button id="btn-login">
+                            Login
+                        </button>
                     </a>
+                        
+                    
                 
                 </form>
 
-                <form id="register-box">
+                <form className="box">
                     
                     E-mail <br/>
                     <input placeholder="Digite seu e-mail" type="text"/><br></br>

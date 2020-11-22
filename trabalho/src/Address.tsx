@@ -14,7 +14,7 @@ const Address:React.FunctionComponent = () => (
                 <Helmet>
                     <title>Endereço</title>
                 </Helmet>
-                <form id="address-box">
+                <form className="box">
 
                 CEP <br/>
                 <input placeholder="Digite seu CEP" type="text"/><br></br>

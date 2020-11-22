@@ -16,16 +16,22 @@ const produtoMap:Function = (data:Array<produtoProp>) => {
 };
 
 const App:React.FunctionComponent = () => (
-
-    <div className="landingBody">
+    <div>
+    
         <Helmet>
-            <title>Home</title>
+            <title>
+                Home
+            </title>
         </Helmet>
-        <div className="App">
-            {produtoMap(data)}
-            {produtoMap(data)}
-            {produtoMap(data)}
-            {produtoMap(data)}
+    
+        <h2>Página principal</h2>
+        <div className="landingBody">
+            <div className="App">
+                {produtoMap(data)}
+                {produtoMap(data)}
+                {produtoMap(data)}
+                {produtoMap(data)}
+            </div>
         </div>
     </div>
     );
