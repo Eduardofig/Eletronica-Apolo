@@ -17,9 +17,12 @@ form{
     margin-bottom: 30px;
 }
 
-#login-box input{
-    margin-bottom: 10px;
+.login-box{
+    height: 230px;
+    width: 300px;
+    margin-top:5vh;
 }
+
 
 button{
     position:relative;

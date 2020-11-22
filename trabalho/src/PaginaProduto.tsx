@@ -2,6 +2,11 @@ import React, {useState} from 'react';
 import './PaginaProduto.css';
 import {produtoProp} from './Interface';
 
+/*
+    Componente da página de produto
+ */
+
+// Modifica a quantidade do produto que a pessoa quer adicionar ao carrinho
 const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nomeProduto, precoProduto, descricaoProduto}:produtoProp) => {
 
     const[quantidade, setQuantidade] = useState(1);

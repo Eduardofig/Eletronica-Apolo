@@ -16,7 +16,7 @@ const Register:React.FunctionComponent = () => {
             
             <div id="container-forms">
             
-                <form className="box">
+                <form className="login-box">
 
                     E-mail <br/>
                     <input placeholder="Digite seu e-mail" type="text"/><br></br>

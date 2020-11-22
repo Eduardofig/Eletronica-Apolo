@@ -3,6 +3,13 @@ import {carrinhoProp, produtoProp} from './Interface';
 import './Carrinho.css';
 import {Helmet} from 'react-helmet';
 
+
+/*
+    Página do Carrinho
+*/
+
+
+// Calcula o total do preço dos produtos
 const Carrinho:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) => {
 
     var initTotal:number = array.reduce((a, b) => (a + b.precoProduto), 0);

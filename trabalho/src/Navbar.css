@@ -10,7 +10,7 @@ header{
 }
 
 header input{
-
+    outline: none;
     text-indent: 10px;
 
 }
