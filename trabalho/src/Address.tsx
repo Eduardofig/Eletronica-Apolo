@@ -14,7 +14,7 @@ const Address:React.FunctionComponent = () => (
                 <Helmet>
                     <title>Endereço</title>
                 </Helmet>
-                <form id="payment-box">
+                <form id="payment-box" action="/Payment">
 
                 CEP <br/>
                 <input placeholder="Digite seu CEP" type="text"/><br></br>

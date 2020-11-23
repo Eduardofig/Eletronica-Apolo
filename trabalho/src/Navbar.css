@@ -19,7 +19,7 @@ header #search{
     width:40%;
     margin-left:20vw;
     margin-right:2%;
-    border-radius: 15px;
+    border-radius: 3px;
     border-style:hidden;
     height:30px;
     transform:translate(0, -1vh);
@@ -27,7 +27,7 @@ header #search{
 header #search:hover{
     background-color:GhostWhite;
 }
-header #logo{
+header .logo{
     width: 80px;
     transform:translate(8vw, 4vh);
 }
@@ -36,14 +36,27 @@ header .icon{
     margin-right: 20px;
     padding-inline-start: 0;
 }
+
+header .icon:hover{
+    transform: translate(0,-.5vh);
+}
 header #cart-icon{
     width: 25px;
-    margin-right:5px;
-    color: white;
+    margin-right:7px;
+}
+
+header #search-icon{
+    width: 25px;
+    transform: translate(-1vw,0);
+}
+
+header #search-icon:hover{
+    transform: translate(-1vw,-.5vh);
 }
 
 header #user-icon{
     margin-right: 5px;
+    width: 25px;
 }
 
 #login{

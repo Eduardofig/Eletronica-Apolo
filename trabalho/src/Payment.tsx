@@ -15,7 +15,7 @@ const Payment:React.FunctionComponent = () => (
             <h2>Pagamento</h2>
             <div id="payment-container">
 
-                <form id="payment-box">
+                <form id="payment-box" action="/">
 
                 Número do Cartão <br/>
                 <input placeholder="Digite o número do cartão" type="text"/><br></br>
@@ -26,7 +26,7 @@ const Payment:React.FunctionComponent = () => (
                 Nome do Titular <br/>
                 <input placeholder="Digite o nome do titular" type="text"/><br></br>
                 <a href="/Address">
-                    <button id='btn-register'>Avançar</button>
+                    <button onClick={()=>alert("Compra realizada com sucesso!")} type = "submit" id='btn-register'>Avançar</button>
                 </a>
 
                 </form>
