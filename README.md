@@ -19,7 +19,7 @@ São necessários os comandos:
 
 ### `git clone`
 Clona os arquivos para o repositório desejado em seu computador.
-https://github.com/Eduardofig/Trabalho-Web-React.git
+`git clone https://github.com/Eduardofig/Trabalho-Web-React.git`
 
 ### `npm install`
 Entrando no diretório trabalho e aplicando esse comando, são instaladas as dependências do projeto.
