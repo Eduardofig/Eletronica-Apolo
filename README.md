@@ -1,5 +1,5 @@
 # Trabalho-Web-React
-Frontend do e-commerce de produtos eletronicos para a disciplina Introducao ao Desenvolvimento Web.
+Frontend do e-commerce de produtos eletrônicos para a disciplina Introducao ao Desenvolvimento Web.
 Feito em na linguagem typescript com o framework 'React'
 
 # Url:
@@ -27,3 +27,18 @@ Esse comando só funciona no diretório onde está o arquivo package.json.
 
 ### `npm start`
 Inicia o projeto em seu navegador na home page.
+
+# Loja
+A partir da estrutura do React, vários componentes foram criados e, dessa forma, várias páginas.
+
+Quando inicializado o projeto com `npm start` o cliente se depara com a página principal. A partir dela ele pode apertar comprar e
+ir para a página de produto (feita de forma genérica com um produto). Além disso ele pode acessar as página de missão e de contato
+para conseguir saber mais informações da loja. Na barra de navegação, também é possível acessar as páginas de login/cadastro e do carrinho.
+
+Quando o usuário decide comprar um produto (na página de produto) ele vai para o carrinho e, em seguida, ele passa pelas páginas de pagamento e endereço
+para poder efetuar a sua compra.
+
+Outra funcionalidade possível é o acesso à pagina de incluir produtos, possível apenas para usuários com permissão de administrador.
+
+A fim de tornar a página acessível, foram utilizadas tags img em vez de alguns ícones do package `react-icons`, pois não admite o identificador alt. Além disso,
+a identidade visual simples, a paleta de cores contrastante e o grande tamanho das letras favorecem a visualização da página sem grandes problemas.
