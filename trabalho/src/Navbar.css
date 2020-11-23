@@ -129,14 +129,14 @@ header a{
         margin-top: 10px;
         display: flex;
         flex-direction: column;
-        flex-wrap: nowrap;
+        flex-wrap: wrap;
         width: 100%;
         justify-content: center;
         align-items: center;
     }
 
     header .icon{
-        margin-top: 5px;
+        margin-top: 3vh;
     }
 
 }
@@ -144,7 +144,7 @@ header a{
 /*
     Media query para telas menores a para tablets
 */
-@media (min-width:500px) and (max-width:1320px){
+@media (min-width:500px) and (max-width:1340px){
 
     header #entrar{
         margin-top: 10px;
@@ -157,7 +157,7 @@ header a{
     }
 
     header .icon{
-        margin-top: 5px;
+        margin-top: 3vh;
     }
 
 }
