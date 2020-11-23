@@ -26,7 +26,7 @@ Entrando no diretório trabalho e aplicando esse comando, são instaladas as dep
 Esse comando só funciona no diretório onde está o arquivo package.json.
 
 ### `npm start`
-Inicia o projeto em seu navegador na home page.
+Inicia o projeto em seu navegador na home page. É importante ressaltar que tanto o npm install quanto o npm start devem ser feitos no diretório trabalho.
 
 # Loja
 A partir da estrutura do React, vários componentes foram criados e, dessa forma, várias páginas.
