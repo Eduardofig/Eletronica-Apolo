@@ -9,6 +9,7 @@ import PagCarrinho from './PagCarrinho';
 import Admin from './Admin';
 import Mission from './Mission';
 import Contact from './Contact';
+import Search from './Search';
 /*  
     Contém as rotas utilizadas no front
 */
@@ -24,6 +25,7 @@ const Routes:React.FunctionComponent = () =>(
                 <Route path="/Register" exact component={Register}/>
                 <Route path="/Admin" exact component={Admin}/>
                 <Route path="/Contact" exact component={Contact}/>
+                <Route path="/Search" exact component={Search}/>
                 <Route path="/Mission" exact component={Mission}/>
             </Switch>
         </BrowserRouter>

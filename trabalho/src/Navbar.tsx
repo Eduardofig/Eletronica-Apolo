@@ -15,7 +15,7 @@ const Navbar:React.FunctionComponent = () => (
         <nav>
             <a href="/"><img className="logo" src={cpu} alt="Logo do site"/></a>
             <input id="search" type="search" placeholder="O que você quer buscar"/>
-            <img src={loupe} id="search-icon" alt="ícone da lupa"/>
+            <a href="/Search"><img src={loupe} id="search-icon" alt="ícone da lupa"/></a>
 
             <ul id="entrar">
             <a className="icon" href="/PagCarrinho"><img src={cart} id="cart-icon" alt="icone de carrinho"/>Meu Carrinho</a>
