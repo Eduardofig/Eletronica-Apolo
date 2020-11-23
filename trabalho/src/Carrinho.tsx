@@ -9,14 +9,17 @@ import {Helmet} from 'react-helmet';
 */
 
 
-// Calcula o total do preço dos produtos
 const Carrinho:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) => {
 
+    // Calcula o total do preço dos produtos
     var initTotal:number = array.reduce((a, b) => (a + b.precoProduto), 0);
-    const [produtos, setProdutos] = useState( array);
-    const [total, setTotal] = useState(initTotal);
-    const removerProduto = (_produto:produtoProp) => {
 
+    //State para deixar dinamico os produtos mostrados no carrinho e o total mostrado conforme sao removidos
+    const [produtos, setProdutos] = useState(array);
+    const [total, setTotal] = useState(initTotal);
+
+    //Funcao que remove um produto
+    const removerProduto = (_produto:produtoProp) => {
         
         setProdutos(produtos.filter(produto => (produto !== _produto)));
         setTotal(total - _produto.precoProduto);

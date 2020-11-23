@@ -2,6 +2,10 @@ import React from "react";
 import "./Produto.css";
 import {produtoProp} from './Interface';
 
+/*
+ * Componente Produto para ser inserido na tela principal
+ */
+
 const Produto:React.FunctionComponent<produtoProp> = ({imagemProduto, descricaoProduto, nomeProduto, precoProduto}:produtoProp) => (
 
         <div id='containerProduto'>

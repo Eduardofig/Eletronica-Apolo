@@ -1,25 +1,23 @@
 import React from "react";
-import {carrinhoProp, produtoProp} from './Interface';
 import './Search.css';
 import {Helmet} from 'react-helmet';
-
+import data from './AppData';
 
 /*
     Página de Busca
 */
 
 
-const Busca:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) => {
-    
+const Busca:React.FunctionComponent = () => {
 
     return(
 
         <div className="containerCarrinho">
-            <h2>Meu carrinho</h2>
+            <h2>Resultados da Busca: </h2>
             <Helmet>
                 <title>Carrinho</title>
             </Helmet>
-            {array.map(produto => (
+            {data.map(produto => (
                 <div className="containerCarrinhoProdutos">
                     <div className="ImgNome">
                         <p className="carProdNome">{produto.nomeProduto}</p>
@@ -30,7 +28,9 @@ const Busca:React.FunctionComponent<carrinhoProp> = ({array}:carrinhoProp) => {
                             <p className="carProdDescricao">{produto.descricaoProduto}</p>    
                             <p className="carProdPreco">R${String(produto.precoProduto) + ',00'}</p>
                         </div>
-                        <button id="btn-remocao">Comprar</button>
+                        <a href="/PaginaDeCompra">
+                            <button id="btn-remocao">Comprar</button>
+                        </a>
                     </div>
                 </div>
                 ))}
