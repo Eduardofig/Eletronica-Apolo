@@ -1,0 +1,79 @@
+.containerCarrinho {
+    width:70%;
+}
+
+.containerCarrinhoProdutos {
+    display:flex;
+    flex-direction:row;
+    justify-content:space-between;
+    width:100%;
+    border:solid;
+    border-radius:6px;
+    border-color:lightblue;
+    border-width:1.9px;
+    margin: 10px 0 20px 0;
+    padding-bottom: 10px;
+}
+
+.ImgNome {
+    justify-self:flex-start;
+    margin-left: 10px;
+}
+
+.End {
+    display:flex;
+    flex-direction:row;
+    flex-wrap:wrap;
+    flex-basis:20%;
+    justify-self:flex-end;
+    margin-right: 10px;
+}
+
+.carProdDescricao{
+    width:auto;
+}
+
+.carDados{
+    height:70%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    flex-basis: 90%;
+}
+
+.carProdPreco{
+    color: grey;
+    font-size: 24px;
+    font-weight: 400;
+    justify-self: flex-end;
+}
+
+.carProdNome {
+    font-weight:bold;
+    font-size: 20px;
+}
+
+#btn-remocao{
+    align-self: flex-end;
+}
+
+.carProdImg {
+    height:180px;
+    width: 180px;
+    border:solid;
+    border-style:ridge;
+    border-color:lightgray;
+    border-radius:6px;
+}
+
+.carTotal{
+    color: rgb(25, 19, 114);
+    font-size: 25px;
+    font-weight:bold;
+}
+
+.carFinalizar{
+    padding: 10px;
+    margin-bottom: 10px;
+}
+

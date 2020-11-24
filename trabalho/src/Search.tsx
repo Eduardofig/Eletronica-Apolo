@@ -15,7 +15,7 @@ const Busca:React.FunctionComponent = () => {
         <div className="containerCarrinho">
             <h2>Resultados da Busca: </h2>
             <Helmet>
-                <title>Carrinho</title>
+                <title>Busca</title>
             </Helmet>
             {data.map(produto => (
                 <div className="containerCarrinhoProdutos">
