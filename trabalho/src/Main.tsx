@@ -23,7 +23,7 @@ const App:React.FunctionComponent = () => (
                 Home
             </title>
         </Helmet>
-    
+        <h1>Bem-vindo à Eletrônica Apolo</h1>
         <h2>Página principal</h2>
         <div className="landingBody">
             <div className="App">

@@ -17,7 +17,7 @@ const Mission:React.FunctionComponent = () => (
             <div id="texto">
                 
                 <p>
-                    Somos a Eletrônica (definir nome) e nossa missão é trazer o melhor dos produtos eletrônicos para nossos clientes.
+                    Somos a Eletrônica Apolo e nossa missão é trazer o melhor dos produtos eletrônicos para nossos clientes.
                     Estamos na ativa desde ontem, quando o front foi terminado para a matéria de introdução a desenvolvimento web.
                 </p>
                 

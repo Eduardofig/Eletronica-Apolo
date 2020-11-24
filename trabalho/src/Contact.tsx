@@ -16,7 +16,7 @@ const Contact:React.FunctionComponent = () => (
             
             <div id="texto">
                 <p>
-                    Nosso e-mail: eletronica...@eletro.com.br<br/>
+                    Nosso e-mail: eletronicaapolo@eletro.com.br<br/>
                     Nosso telefone: (16)3333-3333
                </p>
             </div>

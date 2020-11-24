@@ -17,6 +17,10 @@ form input{
     text-indent: 6px;
 }
 
+h1{
+    text-align: center;
+}
+
 h2{
     font-size: 30px;
 }
