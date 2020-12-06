@@ -7,12 +7,8 @@ router.get("/product",(req,res)=>{
 })
 
 router.post('/product', function(req, res, next){
-    try{
-        const product = Product.create(req.body);
-        res.send(product)
-        console.log("product created")
-    }
-    catch(err){res.send(err)}
+    Product.create(req.body).then(product =>
+        res.send(product)).catch(next);
 });
 
 router.put('/product/:id', function(req, res, next){
