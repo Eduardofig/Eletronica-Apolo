@@ -1,39 +1,68 @@
-const express = require('express');
 const User = require('../models/user');
-const router = express.Router();
+const auth = require('../services/auth');
 
-router.get("/cadastro",(req,res,next)=>{
+const controller = {
+    
+    get(req,res,next){
         res.send("Página de cadastro");
-})
+    },
+        
 
-router.post('/cadastro', function(req, res, next){
-    User.create(req.body).then(user =>
-        res.send(user)).catch(next);
-});
+   signUp: async(req,res,next) =>{
 
-// GET by e-mail
-router.get('/cadastro/:id',function(req,res,next){
-    
-    User.find({email: req.body.email}).
-    then(user => res.send(user)).catch(next);
+    const email = req.body.email;
+    const senha = req.body.senha;
 
-})
+    const createdUser = await auth.signUp(email,senha);
 
-router.put('/cadastro/:id', function(req, res, next){
-    
-    User.findByIdAndUpdate(req.params.id, req.body,{new: true}).
-    then(function(){
-    User.findOne({_id: req.params.id}).
-    then(user =>res.send(user),
-    console.log("User updated"));
-    }).catch(next);
-});
+    if(!createdUser){
+        return res.status(400).json();
+    }
 
-router.delete('/cadastro/:id', function(req, res, next){
+    return res.json(createdUser);
+        
+   },
+
+   signIn: async(req,res,next) =>{
+
+    const email = req.body.email;
+    const senha = req.body.senha;    
+
+    const user = await auth.signIn(email,senha);
+
+    if(!user){
+        return res.status(401).json();
+    }
+
+    return res.json(user);
+
+   },
+
+   getById(req,res,next){
+        User.create(req.body).then(user =>
+            res.send(user)).catch(next);
+    },
+
+    put(req,res,next){
+
+        User.findByIdAndUpdate(req.params.id, req.body,{new: true}).
+            then(function(){
+        User.findOne({_id: req.params.id}).
+            then(user =>res.send(user),
+        console.log("User updated"));
+        }).catch(next);
+
+    },
+
+    delete(req,res,next){
+
     User.findByIdAndRemove({_id: req.params.id}).then(function(user){
         res.send(user)
         console.log("User deleted");
     }).catch(next);
-});
 
-module.exports = (app) => app.use('/auth',router)
+    },
+
+}
+
+module.exports = controller

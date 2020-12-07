@@ -1,40 +1,40 @@
-const express = require('express');
 const Product = require('../models/product');
-const router = express.Router();
 
-router.get("/product",(req,res)=>{
-        res.send("Página de produtos")
-})
+const controller = {
 
-router.post('/product', function(req, res, next){
-    Product.create(req.body).then(product =>
-        res.send(product)).catch(next);
-});
+    get(req,res,next){
+        res.send("Página de produtos");
+    },
 
-router.put('/product/:id', function(req, res, next){
-    
-    Product.findByIdAndUpdate(req.params.id, req.body,{new: true}).
-    then(function(){
-    Product.findOne({_id: req.params.id}).
-    then(product =>res.send(product),
-    console.log("Product updated"));
-    }).catch(next);
-});
+    post(req,res,next){
+        Product.create(req.body).then(product =>
+            res.send(product)).catch(next);
+    },
 
-router.delete('/product/:id', function(req, res, next){
-    Product.findByIdAndRemove({_id: req.params.id}).then(function(product){
-        res.send(product)
-        console.log("Product deleted");
-    }).catch(next);
-});
+    put(req,res,next){
+        Product.findByIdAndUpdate(req.params.id, req.body,{new: true}).
+            then(function(){
+        Product.findOne({_id: req.params.id}).
+            then(product =>res.send(product),
+            console.log("Product updated"));
+            }).catch(next);
+    },
 
-router.get('/product/:id',function(req,res,next){
-    Product.findById({_id: req.params.id}).then(function(product){
-        res.send(product)
-        console.log(product);
-    }).catch(next);
+    delete(req,res,next){
+        Product.findByIdAndRemove({_id: req.params.id}).then(function(product){
+            res.send(product)
+            console.log("Product deleted");
+        }).catch(next);  
+    },
 
-});
-    
+    getById(req,res,next){
+        Product.findById({_id: req.params.id}).then(function(product){
+            res.send(product)
+            console.log(product);
+        }).catch(next);
 
-module.exports = (app) => app.use(router)
+    },
+
+}
+
+module.exports = controller;

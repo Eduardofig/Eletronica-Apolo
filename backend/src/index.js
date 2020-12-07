@@ -10,15 +10,17 @@ app.use(bodyParser.json());
 app.use(bodyParser.urlencoded({extended: false}));
 
 // Controllers
-require('./controllers/productController')(app);
-require('./controllers/userController')(app);
+require('./controllers/productController');
+require('./controllers/userController');
+require('./services/auth');
 
 // Rotas
-app.use('/product',product)
-app.use('/auth/cadastro',user)
+app.use('/cadastro',user);
+app.use('/product',product);
 
+// Servidor rodando
 app.listen(3010,() =>{
 
-    console.log("The server is running on port 3010");
+    console.log("O servidor está rodando na porta 3010");
 
 });

@@ -6,6 +6,6 @@ mongoose.connect("mongodb://localhost/eletronica_apolo_web", {
   useUnifiedTopology: true,
   useCreateIndex: true,
   useFindAndModify: false },
-  ()=>console.log("Connected to mongo"));
+  ()=>console.log("Conectado ao MongoDB"));
 
 module.exports = mongoose;
