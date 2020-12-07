@@ -1,3 +1,4 @@
+// Controller do usuário
 const User = require('../models/user');
 const auth = require('../services/auth');
 

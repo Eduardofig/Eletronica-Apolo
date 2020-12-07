@@ -2,6 +2,7 @@ const User = require('../models/user');
 const bcrypt = require('bcrypt');
 const jwt = require('jsonwebtoken');
 
+// Função auxiliar de geração de tokens
 function formatResponse(user){
     
     const token = jwt.sign({userId: user.id},'ICMCRAINHA');
@@ -16,6 +17,7 @@ function formatResponse(user){
 
 const auth = {
 
+    // Função assíncrona de cadastro
     signUp: async(email,password) => {
         const user = await User.findOne({email: email});
 
@@ -36,15 +38,13 @@ const auth = {
 
     },
 
+    // Função assíncrona de Login
     signIn: async(email,senha) => {
-
-
         const user = await User.findOne({email:email});
 
         if(!bcrypt.compareSync(senha,user.senha)){
             return null;
         }
-
         return formatResponse(user);
 
     },

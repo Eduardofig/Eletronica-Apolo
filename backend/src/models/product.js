@@ -1,5 +1,6 @@
 const mongoose = require('../database')
 
+// Model do produto
 const ProductSchema = new mongoose.Schema({
 
     nome:{

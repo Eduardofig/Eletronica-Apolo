@@ -1,5 +1,6 @@
 const mongoose = require('../database')
 
+// Model do usuário
 const UserSchema = new mongoose.Schema({
 
     email: {

@@ -1,3 +1,4 @@
+// Controller do produto
 const Product = require('../models/product');
 
 const controller = {
