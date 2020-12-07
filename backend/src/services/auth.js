@@ -1,5 +1,18 @@
 const User = require('../models/user');
 const bcrypt = require('bcrypt');
+const jwt = require('jsonwebtoken');
+
+function formatResponse(user){
+    
+    const token = jwt.sign({userId: user.id},'ICMCRAINHA');
+
+    return {
+        user:{
+            email: user.email
+        },
+        token
+    };
+}
 
 const auth = {
 
@@ -19,7 +32,7 @@ const auth = {
         admin:false
     });
 
-    return createdUser;
+    return formatResponse(createdUser);
 
     },
 
@@ -32,7 +45,7 @@ const auth = {
             return null;
         }
 
-        return user;
+        return formatResponse(user);
 
     },
    
