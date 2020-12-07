@@ -42,6 +42,10 @@ const auth = {
     signIn: async(email,senha) => {
         const user = await User.findOne({email:email});
 
+        if(!user){
+            return null;
+        }
+
         if(!bcrypt.compareSync(senha,user.senha)){
             return null;
         }
