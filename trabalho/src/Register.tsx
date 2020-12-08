@@ -12,6 +12,7 @@ const Register:React.FunctionComponent = () => {
     const [senha,setSenha] = useState('');
     const [emailCadastro,setEmailCadastro] = useState('');
     const [senhaCadastro,setSenhaCadastro] = useState('');
+    const [senhaCadastro2,setSenhaCadastro2] = useState('');
 
     // Login
     async function handleSignIn(e:any) {
@@ -30,6 +31,10 @@ const Register:React.FunctionComponent = () => {
     async function handleSignUp(e:any) {
         e.preventDefault();
 
+            if(senhaCadastro != senhaCadastro2){
+                alert('Campos de senha não compatíveis!');
+                return;
+            }
 
             const response = await api.post("cadastro/auth/signup",{
                     email:emailCadastro,senha:senhaCadastro
@@ -75,7 +80,7 @@ const Register:React.FunctionComponent = () => {
                     Senha <br/>
                     <input placeholder="Digite sua senha" type="password" value={senhaCadastro} onChange={e=>setSenhaCadastro(e.target.value)}required/><br></br>
                     Confirmar senha <br/>
-                    <input placeholder="Confirme sua senha" type="password"/><br></br>
+                    <input placeholder="Confirme sua senha" type="password" value={senhaCadastro2} onChange={e=>setSenhaCadastro2(e.target.value)}required/><br></br>
 
                     <button id='btn-register' type="submit">Cadastrar</button>
                 </form>
