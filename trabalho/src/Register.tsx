@@ -31,7 +31,7 @@ const Register:React.FunctionComponent = () => {
     async function handleSignUp(e:any) {
         e.preventDefault();
 
-            if(senhaCadastro != senhaCadastro2){
+            if(senhaCadastro !== senhaCadastro2){
                 alert('Campos de senha não compatíveis!');
                 return;
             }
@@ -41,7 +41,7 @@ const Register:React.FunctionComponent = () => {
             });
 
             console.log(response.data);
-            console.log(email);
+            alert('Cadastro realizado com sucesso!');
             
             window.location.replace('/');   
         }
@@ -59,7 +59,7 @@ const Register:React.FunctionComponent = () => {
                 <form className="login-box" onSubmit={handleSignIn}>
 
                     E-mail <br/>
-                    <input placeholder="Digite seu e-mail" type="text" value={email} onChange={e=>setEmail(e.target.value)}required/><br></br>
+                    <input placeholder="Digite seu e-mail" type="email" value={email} onChange={e=>setEmail(e.target.value)}required/><br></br>
                     Senha <br/>
                     <input placeholder="Digite sua senha" type="password" value={senha} onChange={e=>setSenha(e.target.value)}required/><br></br>
                      
