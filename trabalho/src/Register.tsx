@@ -18,17 +18,23 @@ const Register:React.FunctionComponent = () => {
     async function handleSignIn(e:any) {
         e.preventDefault();
 
-            const response = await api.post("cadastro/auth/signin",{
-                    email,senha
-            });
-
-            console.log(response.data);
+        
+            api.post("cadastro/auth/signin",{
+                email,senha
+        }).then((response) => {
+            console.log(response);
             
-        if (response.data.user.admin) {
-            window.location.replace('/admin');
-        } else {
-            window.location.replace('/');
-        }
+            if (response.data.user.admin) {
+                window.location.replace('/admin');
+            }
+            else {
+                window.location.replace('/');
+            }
+        
+        }).catch(e => {
+            console.log(e);
+            alert('E-mail ou senha não correspondem aos dados do sistema!');
+        });
         }
     
     // Cadastro
@@ -40,18 +46,26 @@ const Register:React.FunctionComponent = () => {
                 return;
             }
 
-            const response = await api.post("cadastro/auth/signup",{
+            api.post("cadastro/auth/signup",{
                     email:emailCadastro,senha:senhaCadastro
+            }).then((response) => {
+                console.log(response);
+                alert('Cadastro realizado com sucesso!');
+                
+                if (emailCadastro.includes('@eletronica.apolo.com.br')) {
+                    window.location.replace('/admin');
+                }
+                else {
+                    window.location.replace('/');
+                }
+            
+            }).catch(e => {
+                console.log(e);
+                alert('E-mail já cadastrado!');
             });
 
-            console.log(response.data);
-            alert('Cadastro realizado com sucesso!');
             
-        if (emailCadastro.includes('@eletronica.apolo.com.br')) {
-            window.location.replace('/admin');
-        } else {
-            window.location.replace('/');
-        }
+        
         }
 
 
