@@ -24,7 +24,11 @@ const Register:React.FunctionComponent = () => {
 
             console.log(response.data);
             
-            window.location.replace('/');   
+        if (response.data.user.admin) {
+            window.location.replace('/admin');
+        } else {
+            window.location.replace('/');
+        }
         }
     
     // Cadastro
@@ -43,7 +47,11 @@ const Register:React.FunctionComponent = () => {
             console.log(response.data);
             alert('Cadastro realizado com sucesso!');
             
-            window.location.replace('/');   
+        if (emailCadastro.includes('@eletronica.apolo.com.br')) {
+            window.location.replace('/admin');
+        } else {
+            window.location.replace('/');
+        }
         }
 
 

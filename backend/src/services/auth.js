@@ -9,7 +9,8 @@ function formatResponse(user){
 
     return {
         user:{
-            email: user.email
+            email: user.email,
+            admin:user.admin,
         },
         token
     };
