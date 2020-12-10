@@ -32,7 +32,7 @@ const auth = {
     const createdUser = await User.create({
         email,
         senha:hash,
-        admin:email.includes('@apolo.eletronica.com.br')
+        admin:email.includes('@eletronica.apolo.com.br')
     });
 
     return formatResponse(createdUser);
