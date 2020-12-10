@@ -18,16 +18,19 @@ const Admin:React.FunctionComponent = () => {
     // Cadastro de produto
     async function handleSignProduct(e:any) {
         e.preventDefault();
-
-            const response = await api.post("/product",{
-                    nome,preco,quantidade,codigo,descricao
-            });
-
-            console.log(response.data);
-            alert('Produto cadastrado com sucesso!');
-            
-            window.location.replace('/Admin');   
-        }
+        api.post("/product",{
+                nome,preco,quantidade,codigo,descricao
+                })
+                .then((response) => {
+                    console.log(response.data);
+                    alert('Produto cadastrado com sucesso!');
+                    window.location.replace('/Admin');   
+                })
+                .catch((e) => {
+                    console.log(e);
+                    alert('Por favor insira um produto valido');
+                });
+            }
     
     return(
 
