@@ -11,6 +11,7 @@ const produtoMap:Function = (data:Array<produtoProp>) => {
             nomeProduto = {dados.nomeProduto}
             descricaoProduto = {dados.descricaoProduto}
             imagemProduto = {dados.imagemProduto}
+            linkProduto = {dados.linkProduto}
         />));
     return map;
 };

@@ -7,7 +7,7 @@ import {produtoProp} from './Interface';
  */
 
 // Modifica a quantidade do produto que a pessoa quer adicionar ao carrinho
-const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nomeProduto, precoProduto, descricaoProduto}:produtoProp) => {
+const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nomeProduto, precoProduto, descricaoProduto, linkProduto}:produtoProp) => {
 
     const[quantidade, setQuantidade] = useState(1);
 
@@ -32,6 +32,7 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nome
                     <h2 className="pagProdutoTitulo">{nomeProduto}</h2>
                     <p className="pagProdutoPreco">R$ {String(precoProduto) + ',00'}</p>
                     <p className="pagProdutoDescricao">{descricaoProduto}</p>
+                    { /*Demo: <a className="pagProdutoDescricao" href={linkProduto}>{linkProduto}</a> */}
                     <label>Quantidade: </label> <br></br>
                     <button id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
                     <p className="pagProdutoQuantidade">{String(quantidade)}</p>
@@ -40,7 +41,6 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nome
                         <button className="pagProdutoButton">Comprar</button>
                     </a>
                 </div>
-                
             </div>
         </div>
     );

@@ -14,12 +14,13 @@ const Admin:React.FunctionComponent = () => {
     const [quantidade,setQuantidade] = useState('');
     const [codigo,setCodigo] = useState('');
     const [descricao,setDescricao] = useState('');
+    const [link,setLink] = useState('');
 
     // Cadastro de produto
     async function handleSignProduct(e:any) {
         e.preventDefault();
         api.post("/product",{
-                nome,preco,quantidade,codigo,descricao
+                nome,preco,quantidade,codigo,descricao,link
                 })
                 .then((response) => {
                     console.log(response.data);
@@ -50,6 +51,9 @@ const Admin:React.FunctionComponent = () => {
                     Quantidade<br/>
                     <input placeholder="Digite a quantidade de produtos" type="number" value={quantidade}
                     onChange={e=>setQuantidade(e.target.value)}required/><br></br>
+                    Link<br/>
+                    <input placeholder="Digite a o link de referencia para um projeto que demonstre o uso do produto" type="text" value={link}
+                    onChange={e=>setLink(e.target.value)}required/><br></br>
                     Código do Produto <br/>
                     <input placeholder="Digite o código do produto" type="text" value={codigo}
                     onChange={e=>setCodigo(e.target.value)}required/><br></br>

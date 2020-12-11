@@ -3,6 +3,7 @@ export interface produtoProp {
     nomeProduto:string;
     descricaoProduto:string;
     imagemProduto:string;
+    linkProduto:string;
 };
 
 export interface carrinhoProp {
