@@ -1,7 +1,7 @@
 .pagProdutoContainer{
     width: 100%;
-    flex-direction: row;
-    flex-wrap:nowrap;
+    flex-direction:row;
+    flex-wrap:wrap;
     align-items: center;
 }
 
@@ -39,7 +39,7 @@
     background-position:center;
     background-size:cover;
     border:none;
-    width:7%;
+    width:10px;
     height:100%;
     border-radius:5px;
 }
@@ -50,11 +50,23 @@
     background-position:center;
     background-size:cover;
     border:none;
-    width:7%;
+    width:10px;
     height:100%;
     border-radius:5px;
 }
 
-#rightArrow:hover #leftArrow:hover {
-    background-opacity:0.7;
+@media only screen and (max-width: 1380px) {
+    .left-container{
+        float:unset;
+        justify-content:center;
+    }
+    .right-container{
+        margin:0;
+        float:unset;
+    }
+    .pagProdutoImagem{
+        margin:0 0 0 23%;
+        height:350px;
+        width:470px;
+    }
 }
