@@ -1,6 +1,6 @@
 import React, {useState} from 'react';
 import './PaginaProduto.css';
-import {produtoProp} from './Interface';
+import {produtoProp} from '../../Interface';
 
 /*
     Componente da página de produto
@@ -32,7 +32,8 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nome
                     <h2 className="pagProdutoTitulo">{nomeProduto}</h2>
                     <p className="pagProdutoPreco">R$ {String(precoProduto) + ',00'}</p>
                     <p className="pagProdutoDescricao">{descricaoProduto}</p>
-                    { /*Demo: <a className="pagProdutoDescricao" href={linkProduto}>{linkProduto}</a> */}
+                    <label>Link de um projeto:</label><br></br>
+                    <a className="pagProdutoDescricao" href={linkProduto}>{linkProduto}</a><br></br>
                     <label>Quantidade: </label> <br></br>
                     <button id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
                     <p className="pagProdutoQuantidade">{String(quantidade)}</p>

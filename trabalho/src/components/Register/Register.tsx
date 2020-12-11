@@ -1,7 +1,7 @@
 import React,{useState} from 'react';
 import './Register.css';
 import {Helmet} from 'react-helmet';
-import api from './services/api';
+import api from '../../services/api';
 
 /*  
     Página de registro, contendo uma caixa para Login e uma Caixa para cadastro

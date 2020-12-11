@@ -1,6 +1,6 @@
 import React from "react"
 import {Helmet} from 'react-helmet';
-import PaginaProduto from './PaginaProduto';
+import PaginaProduto from './components/PaginaProduto/PaginaProduto';
 
 const PaginaDeCompra:React.FunctionComponent = () =>{
     return(

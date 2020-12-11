@@ -1,14 +1,14 @@
 import React from 'react';
 import {BrowserRouter, Route, Switch} from 'react-router-dom';
-import Address from './Address';
-import Payment from './Payment';
-import Main from './Main';
-import Register from './Register';
+import Address from './components/Address/Address';
+import Payment from './components/Payment/Payment';
+import Main from './components/Main/Main';
+import Register from './components/Register/Register';
 import PaginaDeCompra from './PaginaDeCompra';
 import PagCarrinho from './PagCarrinho';
-import Admin from './Admin';
+import Admin from './components/Admin/Admin';
 import Mission from './Mission';
-import Contact from './Contact';
+import Contact from './components/Contact/Contact';
 import Search from './Search';
 /*  
     Contém as rotas utilizadas no front

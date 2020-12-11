@@ -1,8 +1,8 @@
 import React from 'react';
 import 'react-router-dom';
 import Routes from './routes';
-import Navbar from './Navbar';
-import './Main.css';
+import Navbar from './components/Navbar/Navbar';
+import './components/Main/Main.css';
 
 
 const App:React.FunctionComponent = () => (

@@ -35,7 +35,7 @@
 
 #leftArrow {
     margin-bottom: 1vh;
-    background: url(./imagens/Seta.jpg) no-repeat;
+    background: url(../../imagens/Seta.jpg) no-repeat;
     background-position:center;
     background-size:cover;
     border:none;
@@ -46,7 +46,7 @@
 
 #rightArrow {
     margin-top: 1vh;
-    background: url(./imagens/SetaCima.jpg) no-repeat;
+    background: url(../../imagens/SetaCima.jpg) no-repeat;
     background-position:center;
     background-size:cover;
     border:none;

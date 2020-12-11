@@ -1,7 +1,7 @@
 import React,{useState} from 'react'
 import './Admin.css';
 import {Helmet} from 'react-helmet';
-import api from './services/api';
+import api from '../../services/api';
 
 /*
     Página do administrador, para cadastro dos produtos

@@ -1,9 +1,9 @@
 import React from 'react';
 import './Navbar.css';
-import cpu from './imagens/Icones/cpu.png'
-import cart from './imagens/Icones/cart.png'
-import user from './imagens/Icones/user1.png'
-import loupe from './imagens/Icones/loupe.png'
+import cpu from '../../imagens/Icones/cpu.png'
+import cart from '../../imagens/Icones/cart.png'
+import user from '../../imagens/Icones/user1.png'
+import loupe from '../../imagens/Icones/loupe.png'
 
 
 /*

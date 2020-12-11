@@ -1,5 +1,5 @@
 import React, {useState} from "react";
-import {carrinhoProp, produtoProp} from './Interface';
+import {carrinhoProp, produtoProp} from '../../Interface';
 import './Carrinho.css';
 import {Helmet} from 'react-helmet';
 

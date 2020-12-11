@@ -1,9 +1,9 @@
 import React from 'react';
 import './Main.css';
-import Produto from './Produto';
-import data from './AppData';
+import Produto from '../../Produto';
+import data from '../../AppData';
 import {Helmet} from 'react-helmet';
-import {produtoProp} from './Interface';
+import {produtoProp} from '../../Interface';
 
 const produtoMap:Function = (data:Array<produtoProp>) => {
     let map = data.map(dados => (<Produto

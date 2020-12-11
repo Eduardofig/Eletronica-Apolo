@@ -1,5 +1,5 @@
 import React from "react"
-import Carrinho from './Carrinho';
+import Carrinho from './components/Carrinho/Carrinho';
 import data from './AppData';
 
 const PagCarrinho:React.FunctionComponent = () => {
