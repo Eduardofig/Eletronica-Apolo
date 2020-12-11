@@ -58,7 +58,7 @@
     border-radius:5px;
 }
 
-@media only screen and (max-width: 900px) {
+@media only screen and (max-width: 920px) {
     .left-container{
         float:unset;
         justify-content:center;
@@ -70,7 +70,6 @@
     }
     .pagProdutoImagem{
         margin:0 0 0 23%;
-        height:350px;
-        width:470px;
+        width:320px;
     }
 }
