@@ -1,6 +1,6 @@
 import React from "react";
 import "./Produto.css";
-import {produtoProp} from './Interface';
+import {produtoProp} from '../../Interface';
 
 /*
  * Componente Produto para ser inserido na tela principal

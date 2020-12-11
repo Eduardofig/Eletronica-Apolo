@@ -1,7 +1,7 @@
 import React from "react";
 import './Search.css';
 import {Helmet} from 'react-helmet';
-import data from './AppData';
+import data from '../../AppData';
 
 /*
     Página de Busca

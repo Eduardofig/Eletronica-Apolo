@@ -1,6 +1,6 @@
 import React from 'react';
 import './Main.css';
-import Produto from '../../Produto';
+import Produto from '../Produto/Produto';
 import data from '../../AppData';
 import {Helmet} from 'react-helmet';
 import {produtoProp} from '../../Interface';

@@ -4,12 +4,12 @@ import Address from './components/Address/Address';
 import Payment from './components/Payment/Payment';
 import Main from './components/Main/Main';
 import Register from './components/Register/Register';
-import PaginaDeCompra from './PaginaDeCompra';
-import PagCarrinho from './PagCarrinho';
+import PaginaDeCompra from './components/PaginaProduto/PaginaDeCompra';
+import PagCarrinho from './components/PagCarrinho/PagCarrinho';
 import Admin from './components/Admin/Admin';
-import Mission from './Mission';
+import Mission from './components/Mission/Mission';
 import Contact from './components/Contact/Contact';
-import Search from './Search';
+import Search from './components/Search/Search';
 /*  
     Contém as rotas utilizadas no front
 */
