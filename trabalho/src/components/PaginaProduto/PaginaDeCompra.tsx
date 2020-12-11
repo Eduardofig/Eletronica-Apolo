@@ -4,7 +4,7 @@ import PaginaProduto from './PaginaProduto';
 
 const PaginaDeCompra:React.FunctionComponent = () =>{
     return(
-        <div style={{width:"57%"}}>
+        <div style={{width:"70%"}}>
             <Helmet>
                 <title>Placa de Arduino</title>
             </Helmet>
