@@ -1,3 +1,7 @@
+.pagProdutoDescricao {
+    font-size:16px;
+}
+
 .pagProdutoContainer{
     width: 100%;
     flex-direction:row;
