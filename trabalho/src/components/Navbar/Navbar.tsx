@@ -12,22 +12,93 @@ import loupe from '../../imagens/Icones/loupe.png'
 
 const Navbar:React.FunctionComponent = () => {
 
+    /*
+        Tratamentos para que o botão de acessibilidade funcione apropriadamente
+    */
     const [fontSize,setFontSize] = useState(100);
 
     const handleAumentar = () => {
 
         setFontSize(fontSize + 10);
+        
+        try{
+            document.querySelector('h1').style.fontSize = `${fontSize + 80}%`;
+        }
+        catch(e){
+            console.log(e);
+        }
+
+        try{
+            document.querySelector('h2').style.fontSize = `${fontSize + 80}%`;
+        }
+        catch(e){
+            console.log(e);
+        }
+
+        try{
+            let arrayForm = document.querySelectorAll('form');
+            
+            for(let i = 0; i < arrayForm.length; i++){
+                arrayForm[i].style.fontSize = `${fontSize + 70}%`;
+            }
+        }
+        
+        catch(e){
+            console.log(e);
+        }
+
+        try{
+            document.getElementById('login-box').style.height = `${fontSize + 70}%`;;
+        }
+        catch(e){
+            console.log(e);
+        }
+        
         document.body.style.fontSize = `${fontSize}%`;
         document.querySelector('header').style.fontSize = `16px`;
-        //document.querySelector('p').style.fontSize = `${fontSize}%`;
+        let arrayParagrafo = document.querySelectorAll('p');
+        for(let i = 0; i < arrayParagrafo.length; i++ ){
+            arrayParagrafo[i].style.fontSize = `${fontSize}%`
+        }
         console.log('Chamou a função!');
     }
 
     const handleDiminuir = () => {
+        
         setFontSize(fontSize - 10);
+
+        try{
+            document.querySelector('h1').style.fontSize = `${fontSize + 80}%`;
+        }
+        catch(e){
+            console.log(e);
+        }
+
+        try{
+            document.querySelector('h2').style.fontSize = `${fontSize + 80}%`;
+        }
+        catch(e){
+            console.log(e);
+        }
+
+        try{
+            let arrayForm = document.querySelectorAll('form');
+            
+            for(let i = 0; i < arrayForm.length; i++){
+                arrayForm[i].style.fontSize = `${fontSize + 70}%`;
+            }
+        }
+        catch(e){
+            console.log(e);
+        }
+
+
         document.body.style.fontSize = `${fontSize}%`;
         document.querySelector('header').style.fontSize = `16px`;
-        //document.querySelector('p').style.fontSize = `${fontSize}%`;
+        let arrayParagrafo = document.querySelectorAll('p');
+        for(let i = 0; i < arrayParagrafo.length; i++ ){
+            arrayParagrafo[i].style.fontSize = `${fontSize}%`
+        }
         console.log('Chamou a função!');
     }
 

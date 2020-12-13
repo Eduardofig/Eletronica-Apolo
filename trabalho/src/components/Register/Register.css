@@ -17,8 +17,8 @@ form{
     margin-bottom: 30px;
 }
 
-.login-box{
-    height: 230px;
+#login-box{
+    height: 250px;
     width: 300px;
     margin-top:5vh;
 }

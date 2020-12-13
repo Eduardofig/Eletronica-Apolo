@@ -50,9 +50,6 @@ header #search-icon{
     transform: translate(-0vw,0);
 }
 
-header #search-icon:hover{
-    transform: translate(-1vw,-.5vh);
-}
 
 header #user-icon{
     margin-right: 5px;

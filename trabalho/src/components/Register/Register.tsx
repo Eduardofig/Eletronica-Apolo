@@ -78,21 +78,16 @@ const Register:React.FunctionComponent = () => {
             
             <div id="container-forms">
             
-                <form className="login-box" onSubmit={handleSignIn}>
+                <form id="login-box" onSubmit={handleSignIn}>
 
                     E-mail <br/>
                     <input placeholder="Digite seu e-mail" type="email" value={email} onChange={e=>setEmail(e.target.value)}required/><br></br>
                     Senha <br/>
                     <input placeholder="Digite sua senha" type="password" value={senha} onChange={e=>setSenha(e.target.value)}required/><br></br>
                      
-                    <a id="login-link" href="/PagCarrinho">
-                        <button id="btn-login" type="submit">
-                            Login
-                        </button>
-                    </a>
-                        
-                    
-                
+                    <button id="btn-login" type="submit">
+                        Login
+                    </button>
                 </form>
 
                 <form className="box" onSubmit={handleSignUp}>
