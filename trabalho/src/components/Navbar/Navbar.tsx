@@ -10,8 +10,33 @@ import loupe from '../../imagens/Icones/loupe.png'
     Componente da barra de navegação, que será reaproveitado em todo o front do projeto
  */
 
-const Navbar:React.FunctionComponent = () => (
+const Navbar:React.FunctionComponent = () => {
 
+ /*
+    window.onload = function() {
+        var elementBody = document.querySelector('body');
+        var elementBtnIncreaseFont = document.getElementById('increase-font');
+        var elementBtnDecreaseFont = document.getElementById('decrease-font');
+        // Padrão de tamanho, equivale a 100% do valor definido no Body
+        var fontSize = 100;
+        // Valor de incremento ou decremento, equivale a 10% do valor do Body
+        var increaseDecrease = 10;
+    
+        // Evento de click para aumentar a fonte
+        elementBtnIncreaseFont.addEventListener('click', function(event) {
+            fontSize = fontSize + increaseDecrease;
+            elementBody.style.fontSize = fontSize + '%';
+        });
+    
+        // Evento de click para diminuir a fonte
+        elementBtnDecreaseFont.addEventListener('click', function(event) {
+            fontSize = fontSize - increaseDecrease;
+            elementBody.style.fontSize = fontSize + '%';
+        });
+    }    
+*/
+    return(
+    <body> 
     <header>
         <nav>
             <a href="/"><img className="logo" src={cpu} alt="Logo do site"/></a>
@@ -30,10 +55,14 @@ const Navbar:React.FunctionComponent = () => (
                     <li><a href="/Contact">Contato</a></li>
                 </ul>
             </div>
-
         </nav>
+        <div className="btn-container">
+            <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
+            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
+        </div>
     </header>
-
-);
+    </body>
+    ) 
+};
 
   export default Navbar;

@@ -120,6 +120,10 @@ header a{
     transition: 0.3s;
 }
 
+body {
+    font-size: 16px;
+}
+
 /*
     Media Query para telas muito pequenas (celulares, por exemplo)
 */
