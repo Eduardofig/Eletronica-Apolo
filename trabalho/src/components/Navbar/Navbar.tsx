@@ -13,18 +13,24 @@ import loupe from '../../imagens/Icones/loupe.png'
 const Navbar:React.FunctionComponent = () => {
 
     const [fontSize,setFontSize] = useState(100);
-    
+
     const handleAumentar = () => {
+
         setFontSize(fontSize + 10);
         document.body.style.fontSize = `${fontSize}%`;
+        document.querySelector('header').style.fontSize = `16px`;
+        //document.querySelector('p').style.fontSize = `${fontSize}%`;
         console.log('Chamou a função!');
     }
 
     const handleDiminuir = () => {
         setFontSize(fontSize - 10);
         document.body.style.fontSize = `${fontSize}%`;
+        document.querySelector('header').style.fontSize = `16px`;
+        //document.querySelector('p').style.fontSize = `${fontSize}%`;
         console.log('Chamou a função!');
     }
+
 
 
     return(
