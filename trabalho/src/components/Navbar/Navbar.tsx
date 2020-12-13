@@ -12,57 +12,61 @@ import loupe from '../../imagens/Icones/loupe.png'
 
 const Navbar:React.FunctionComponent = () => {
 
- /*
-    window.onload = function() {
-        var elementBody = document.querySelector('body');
-        var elementBtnIncreaseFont = document.getElementById('increase-font');
-        var elementBtnDecreaseFont = document.getElementById('decrease-font');
-        // Padrão de tamanho, equivale a 100% do valor definido no Body
-        var fontSize = 100;
-        // Valor de incremento ou decremento, equivale a 10% do valor do Body
-        var increaseDecrease = 10;
-    
-        // Evento de click para aumentar a fonte
-        elementBtnIncreaseFont.addEventListener('click', function(event) {
-            fontSize = fontSize + increaseDecrease;
-            elementBody.style.fontSize = fontSize + '%';
-        });
-    
-        // Evento de click para diminuir a fonte
-        elementBtnDecreaseFont.addEventListener('click', function(event) {
-            fontSize = fontSize - increaseDecrease;
-            elementBody.style.fontSize = fontSize + '%';
-        });
-    }    
-*/
+
+    function aumentarFonte(){
+        
+        try{
+            var element = document.getElementById('aumentar');
+            var atual = element.style.fontSize;
+            console.log(atual);
+        }catch(e){
+            console.log(e);
+        }
+    }
+
+    function reduzirFonte(){
+
+        try{
+            var element = document.getElementById('aumentar');
+            var atual=element.style.fontSize;
+            atual = '20px'
+            element.style.fontSize = atual;
+            console.log('aumentou');
+        }catch(e){
+            console.log(e);
+        }
+
+    }
+
+
     return(
-    <body> 
-    <header>
-        <nav>
-            <a href="/"><img className="logo" src={cpu} alt="Logo do site"/></a>
-            <input id="search" type="search" placeholder="O que você quer buscar"/>
-            <a href="/Search"><img src={loupe} id="search-icon" alt="ícone da lupa"/></a>
 
-            <ul id="entrar">
-            <a className="icon" href="/PagCarrinho"><img src={cart} id="cart-icon" alt="icone de carrinho"/>Meu Carrinho</a>
-            <a className="icon"href="/Register"><img src={user} id="user-icon" alt="icone de usuário"/>Login ou Cadastre-se</a>
-            </ul>
+        <header>
+            <nav>
+                <a href="/"><img className="logo" src={cpu} alt="Logo do site"/></a>
+                <button className="accessibility-btn" id='aumentar'onClick={()=> aumentarFonte()}>A+</button>
+                <button className="accessibility-btn" onClick={()=>reduzirFonte}>A-</button>
+                <input id="search" type="search" placeholder="O que você quer buscar"/>
+                <a href="/Search"><img src={loupe} id="search-icon" alt="ícone da lupa"/></a>
 
-            <div id="menudenav">
-                <ul>
-                    <li><a href="/">Home</a></li>
-                    <li><a href="/Mission">Missão</a></li>
-                    <li><a href="/Contact">Contato</a></li>
+                <ul id="entrar">
+                <a className="icon" href="/PagCarrinho"><img src={cart} id="cart-icon" alt="icone de carrinho"/>Meu Carrinho</a>
+                <a className="icon"href="/Register"><img src={user} id="user-icon" alt="icone de usuário"/>Login ou Cadastre-se</a>
                 </ul>
-            </div>
-        </nav>
-        <div className="btn-container">
-            <button name="increase-font" id="increase-font" title="Aumentar fonte">A +</button>
-            <button name="decrease-font" id="decrease-font" title="Diminuir fonte">A -</button>
-        </div>
-    </header>
-    </body>
-    ) 
-};
+
+                <div id="menudenav">
+                    <ul>
+                        <li><a href="/">Home</a></li>
+                        <li><a href="/Mission">Missão</a></li>
+                        <li><a href="/Contact">Contato</a></li>
+                    </ul>
+                </div>
+
+
+
+            </nav>
+        </header>
+
+)};
 
   export default Navbar;
