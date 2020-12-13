@@ -33,8 +33,8 @@ const PaginaProduto:React.FunctionComponent<produtoProp> = ({imagemProduto, nome
                     <p className="pagProdutoPreco">R$ {String(precoProduto) + ',00'}</p>
                     <p className="pagProdutoDescricao">{descricaoProduto}</p>
                     <label>Link de um projeto:</label><br></br>
-                    <a className="pagProdutoDescricao" href={linkProduto}>{linkProduto}</a><br></br>
-                    <label>Quantidade: </label> <br></br>
+                    <a className="pagProdutoDescricao" href={linkProduto}>{linkProduto}</a><br></br><br></br>
+                    <label>Quantidade: </label> <br></br><br></br>
                     <button id="rightArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(true)} />
                     <p className="pagProdutoQuantidade">{String(quantidade)}</p>
                     <button id="leftArrow" className="pagProdutoArrow" type="button" onClick={() => alterarQuantidade(false)} />

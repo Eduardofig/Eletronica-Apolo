@@ -1,4 +1,4 @@
-import React from 'react';
+import React,{useState} from 'react';
 import './Navbar.css';
 import cpu from '../../imagens/Icones/cpu.png'
 import cart from '../../imagens/Icones/cart.png'
@@ -12,30 +12,18 @@ import loupe from '../../imagens/Icones/loupe.png'
 
 const Navbar:React.FunctionComponent = () => {
 
-
-    function aumentarFonte(){
-        
-        try{
-            var element = document.getElementById('aumentar');
-            var atual = element.style.fontSize;
-            console.log(atual);
-        }catch(e){
-            console.log(e);
-        }
+    const [fontSize,setFontSize] = useState(100);
+    
+    const handleAumentar = () => {
+        setFontSize(fontSize + 10);
+        document.body.style.fontSize = `${fontSize}%`;
+        console.log('Chamou a função!');
     }
 
-    function reduzirFonte(){
-
-        try{
-            var element = document.getElementById('aumentar');
-            var atual=element.style.fontSize;
-            atual = '20px'
-            element.style.fontSize = atual;
-            console.log('aumentou');
-        }catch(e){
-            console.log(e);
-        }
-
+    const handleDiminuir = () => {
+        setFontSize(fontSize - 10);
+        document.body.style.fontSize = `${fontSize}%`;
+        console.log('Chamou a função!');
     }
 
 
@@ -44,8 +32,8 @@ const Navbar:React.FunctionComponent = () => {
         <header>
             <nav>
                 <a href="/"><img className="logo" src={cpu} alt="Logo do site"/></a>
-                <button className="accessibility-btn" id='aumentar'onClick={()=> aumentarFonte()}>A+</button>
-                <button className="accessibility-btn" onClick={()=>reduzirFonte}>A-</button>
+                <button className="accessibility-btn" id='aumentar'onClick={()=> handleAumentar()}>A+</button>
+                <button className="accessibility-btn" onClick={()=>handleDiminuir()}>A-</button>
                 <input id="search" type="search" placeholder="O que você quer buscar"/>
                 <a href="/Search"><img src={loupe} id="search-icon" alt="ícone da lupa"/></a>
 
