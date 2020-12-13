@@ -36,6 +36,7 @@ form input{
 
 textarea{
     margin-top: 10px;
+    outline-color: rgb(81, 221, 221);
 }
 
 #btn-cadastro{
