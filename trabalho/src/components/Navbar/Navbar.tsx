@@ -10,8 +10,6 @@ import loupe from '../../imagens/Icones/loupe.png'
     Componente da barra de navegação, que será reaproveitado em todo o front do projeto
  */
 
-/*Olá*/
-
 const Navbar:React.FunctionComponent = () => (
 
     <header>
