@@ -93,7 +93,7 @@ const Register:React.FunctionComponent = () => {
                 <form className="box" onSubmit={handleSignUp}>
                     
                     E-mail <br/>
-                    <input placeholder="Digite seu e-mail" type="text" value={emailCadastro} onChange={e=>setEmailCadastro(e.target.value)}required/><br></br>
+                    <input placeholder="Digite seu e-mail" type="email" value={emailCadastro} onChange={e=>setEmailCadastro(e.target.value)}required/><br></br>
                     Senha <br/>
                     <input placeholder="Digite sua senha" type="password" value={senhaCadastro} onChange={e=>setSenhaCadastro(e.target.value)}required/><br></br>
                     Confirmar senha <br/>
