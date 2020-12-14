@@ -42,6 +42,7 @@ Roda o backend
 
 Para acessar o mongo do terminal:
 "mongodb+srv://eletronica-apollo.63ug4.mongodb.net/Eletronica-Apollo" --username admin
+
 Senha:
 A senha foi informada no pdf da entrega.
 
