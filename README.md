@@ -15,6 +15,9 @@ Leonardo dos Santos Marcondes 10748476
 Yann Amado Nunes Costa 10746943
 
 # Iniciando o repositório
+
+# Front-end
+
 São necessários os comandos:
 
 ### `git clone`
@@ -27,6 +30,20 @@ Esse comando só funciona no diretório onde está o arquivo package.json.
 
 ### `npm start`
 Inicia o projeto em seu navegador na home page. É importante ressaltar que tanto o npm install quanto o npm start devem ser feitos no diretório trabalho.
+
+# Backend
+
+São necessários os comandos:
+### `npm install`
+Entrando no diretório backend e aplicando esse comando, são instaladas as dependências do projeto.
+
+### `npm start`
+Roda o backend 
+
+Para acessar o mongo do terminal:
+"mongodb+srv://eletronica-apollo.63ug4.mongodb.net/Eletronica-Apollo" --username admin
+Senha:
+A senha foi informada no pdf da entrega.
 
 # Loja
 A partir da estrutura do React, vários componentes foram criados e, dessa forma, várias páginas.
