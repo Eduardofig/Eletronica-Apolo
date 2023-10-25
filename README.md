@@ -1,10 +1,11 @@
-# Trabalho-Web-React
-Frontend do e-commerce de produtos eletrônicos para a disciplina Introducao ao Desenvolvimento Web.
-Feito em na linguagem typescript com o framework 'React'
+# Web-React Project
+Frontend of the electronic products e-commerce for the Introduction to Web Development course.
+Built in TypeScript with the 'React' framework.
 
-# Url:
+# URL:
 https://sharp-brattain-6e88d8.netlify.app
-# Membros do grupo
+
+# Group Members
 
 Daniel Carvalho Dantas 10685702
 
@@ -14,49 +15,49 @@ Leonardo dos Santos Marcondes 10748476
 
 Yann Amado Nunes Costa 10746943
 
-# Iniciando o repositório
+# Initializing the Repository
 
 # Front-end
 
-São necessários os comandos:
+The following commands are required:
 
 ### `git clone`
-Clona os arquivos para o repositório desejado em seu computador.
+Clone the files to the desired repository on your computer.
 `git clone https://github.com/Eduardofig/Trabalho-Web-React.git`
 
 ### `npm install`
-Entrando no diretório trabalho e aplicando esse comando, são instaladas as dependências do projeto.
-Esse comando só funciona no diretório onde está o arquivo package.json.
+Enter the 'trabalho' directory and execute this command to install project dependencies.
+This command only works in the directory where the 'package.json' file is located.
 
 ### `npm start`
-Inicia o projeto em seu navegador na home page. É importante ressaltar que tanto o npm install quanto o npm start devem ser feitos no diretório trabalho.
+Starts the project in your browser on the home page. It's important to note that both 'npm install' and 'npm start' should be done in the 'trabalho' directory.
 
 # Backend
 
-São necessários os comandos:
+The following commands are required:
 ### `npm install`
-Entrando no diretório backend e aplicando esse comando, são instaladas as dependências do projeto.
+Enter the 'backend' directory and execute this command to install project dependencies.
 
 ### `npm start`
-Roda o backend 
+Runs the backend.
 
-Para acessar o mongo do terminal:
+To access the MongoDB from the terminal:
 "mongodb+srv://eletronica-apollo.63ug4.mongodb.net/Eletronica-Apollo" --username admin
 
-Senha:
-A senha foi informada no pdf da entrega.
+Password:
+The password was provided in the delivery PDF.
 
-# Loja
-A partir da estrutura do React, vários componentes foram criados e, dessa forma, várias páginas.
+# Store
+Using the React structure, various components were created, resulting in several pages.
 
-Quando inicializado o projeto com `npm start` o cliente se depara com a página principal. A partir dela ele pode apertar comprar e
-ir para a página de produto (feita de forma genérica com um produto). Além disso ele pode acessar as página de missão e de contato
-para conseguir saber mais informações da loja. Na barra de navegação, também é possível acessar as páginas de login/cadastro e do carrinho.
+When the project is initialized with 'npm start,' the client is presented with the main page. From there, they can click 'buy' and
+go to the product page (generic product). Additionally, they can access the mission and contact pages
+to get more information about the store. In the navigation bar, you can also access the login/registration and cart pages.
 
-Quando o usuário decide comprar um produto (na página de produto) ele vai para o carrinho e, em seguida, ele passa pelas páginas de pagamento e endereço
-para poder efetuar a sua compra.
+When the user decides to purchase a product (on the product page), they go to the cart and then proceed through the payment and address pages
+to complete their purchase.
 
-Outra funcionalidade possível é o acesso à pagina de incluir produtos, possível apenas para usuários com permissão de administrador.
+Another possible feature is access to the product inclusion page, possible only for users with administrator permission.
 
-A fim de tornar a página acessível, foram utilizadas tags img em vez de alguns ícones do package `react-icons`, pois não admite o identificador alt. Além disso,
-a identidade visual simples, a paleta de cores contrastante e o grande tamanho das letras favorecem a visualização da página sem grandes problemas.
+To make the page accessible, 'img' tags were used instead of some icons from the 'react-icons' package, as they do not support the 'alt' attribute. Additionally,
+the simple visual identity, contrasting color palette, and large font size facilitate page viewing without major issues.
